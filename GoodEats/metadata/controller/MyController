@@ -1,0 +1,13 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController"
+    },
+    "id": "ExtBox1-ext-gen5808",
+    "designerId": "b4c65fbb-1d3e-4521-a85f-bed1c19a80b8"
+}

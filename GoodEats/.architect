@@ -1,0 +1,24 @@
+{
+    "expandedState": {
+        "data": true,
+        "model": true,
+        "component": true,
+        "controller": true,
+        "resource": true,
+        "9972c523-5dfc-41d6-84d6-5831f84c12ec": {
+            "id": "9972c523-5dfc-41d6-84d6-5831f84c12ec"
+        },
+        "b0dc5322-1b7c-436e-b5e3-0e0c34f5f5c7": {
+            "id": "b0dc5322-1b7c-436e-b5e3-0e0c34f5f5c7"
+        },
+        "b4c65fbb-1d3e-4521-a85f-bed1c19a80b8": {
+            "id": "b4c65fbb-1d3e-4521-a85f-bed1c19a80b8"
+        },
+        "a2cacc11-7460-4c82-9c55-3c4910da33b5": {
+            "id": "a2cacc11-7460-4c82-9c55-3c4910da33b5"
+        },
+        "8705dc1a-6648-4068-8b9c-6d219aea00a0": {
+            "id": "8705dc1a-6648-4068-8b9c-6d219aea00a0"
+        }
+    }
+}

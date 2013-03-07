@@ -1,0 +1,74 @@
+{
+    "name": "GoodEats",
+    "settings": {
+        "urlPrefix": "http://localhost:8888/goodeats/GoodEats/",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 678,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "touch20",
+    "topInstanceFileMap": {
+        "a2cacc11-7460-4c82-9c55-3c4910da33b5": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "8705dc1a-6648-4068-8b9c-6d219aea00a0": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "9972c523-5dfc-41d6-84d6-5831f84c12ec": {
+            "paths": [
+                "metadata/view/MyContainer",
+                "app/view/override/MyContainer.js",
+                "app/view/MyContainer.js"
+            ],
+            "className": "MyContainer"
+        },
+        "b4c65fbb-1d3e-4521-a85f-bed1c19a80b8": {
+            "paths": [
+                "metadata/controller/MyController",
+                "app/controller/override/MyController.js",
+                "app/controller/MyController.js"
+            ],
+            "className": "MyController"
+        },
+        "b0dc5322-1b7c-436e-b5e3-0e0c34f5f5c7": {
+            "paths": [
+                "metadata/model/MyModel",
+                "app/model/override/MyModel.js",
+                "app/model/MyModel.js"
+            ],
+            "className": "MyModel"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "9972c523-5dfc-41d6-84d6-5831f84c12ec"
+        ],
+        "store": [],
+        "controller": [
+            "b4c65fbb-1d3e-4521-a85f-bed1c19a80b8"
+        ],
+        "model": [
+            "b0dc5322-1b7c-436e-b5e3-0e0c34f5f5c7"
+        ],
+        "resource": [
+            "a2cacc11-7460-4c82-9c55-3c4910da33b5",
+            "8705dc1a-6648-4068-8b9c-6d219aea00a0"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
