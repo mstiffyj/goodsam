@@ -1,0 +1,62 @@
+{
+    "type": "tabpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Viewport",
+        "designer|userAlias": "viewport",
+        "designer|initialView": true,
+        "id": "viewport"
+    },
+    "id": "ExtBox1-ext-gen10686",
+    "designerId": "868f0a03-6891-402e-847b-db41d38ce985",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Timeline",
+                "iconCls": "home"
+            },
+            "designerId": "bea5224a-a3e5-4f2e-8134-d42677d6a3dd",
+            "masterInstanceId": "ExtBox1-ext-gen2518"
+        },
+        {
+            "type": "tabbar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyTabBar",
+                "docked": "bottom",
+                "ui": "light"
+            },
+            "designerId": "604b4832-4e7c-426f-a023-690b07595970"
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "end",
+                "designer|userClassName": "MyToolbar",
+                "docked": "top",
+                "ui": "light",
+                "title": "GoodSam"
+            },
+            "designerId": "371fc685-c4bf-4be4-a8c2-1d63ee236b43"
+        }
+    ]
+}

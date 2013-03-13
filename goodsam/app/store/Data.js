@@ -27,7 +27,7 @@ Ext.define('MyApp.store.Data', {
         storeId: 'data',
         proxy: {
             type: 'jsonp',
-            url: 'https://api.instagram.com/v1/media/popular?access_token=173936120.f59def8.0b91904cc11e4dd1858356ca4e9b1974',
+            url: 'https://api.instagram.com/v1/tags/gooddeed/media/recent?client_id=%207bff020e004c4170a0818f85dc8ebce4',
             reader: {
                 type: 'json',
                 rootProperty: 'data'

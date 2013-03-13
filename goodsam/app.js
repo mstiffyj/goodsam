@@ -25,13 +25,14 @@ Ext.application({
         'Data'
     ],
     views: [
-        'Timeline'
+        'Timeline',
+        'Viewport'
     ],
     name: 'MyApp',
 
     launch: function() {
 
-        Ext.create('MyApp.view.Timeline', {fullscreen: true});
+        Ext.create('MyApp.view.Viewport', {fullscreen: true});
     }
 
 });

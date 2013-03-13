@@ -44,11 +44,26 @@
                 "app/store/Data.js"
             ],
             "className": "Data"
+        },
+        "868f0a03-6891-402e-847b-db41d38ce985": {
+            "paths": [
+                "metadata/view/Viewport",
+                "app/view/override/Viewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "Viewport"
+        },
+        "01a0f667-ee17-4af0-bae3-1820d9e00fab": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
         }
     },
     "viewOrderMap": {
         "view": [
-            "f1843079-0715-4325-a66d-578ce9d70950"
+            "f1843079-0715-4325-a66d-578ce9d70950",
+            "868f0a03-6891-402e-847b-db41d38ce985"
         ],
         "store": [
             "69a0576a-e469-48e2-b2cd-3dd5309357f0"
@@ -58,7 +73,8 @@
             "68977da9-4e45-4185-bb26-c7b53af01f7b"
         ],
         "resource": [
-            "af4d2704-2190-451d-b7f4-bb101bb8913e"
+            "af4d2704-2190-451d-b7f4-bb101bb8913e",
+            "01a0f667-ee17-4af0-bae3-1820d9e00fab"
         ],
         "app": [
             "application"

@@ -21,6 +21,21 @@ Ext.define('MyApp.model.Instagram', {
         fields: [
             {
                 name: 'link'
+            },
+            {
+                name: 'user'
+            },
+            {
+                name: 'images'
+            },
+            {
+                name: 'caption'
+            },
+            {
+                name: 'likes'
+            },
+            {
+                name: 'id'
             }
         ]
     }

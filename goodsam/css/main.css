@@ -1,0 +1,62 @@
+body {
+    width: 100%;
+    font-size: 1em;
+    
+}
+
+#viewport {
+    width: 100%;
+    
+}
+
+#timeline {
+    background-image: url('../images/bg.jpg');
+    
+}
+
+#wrap {
+    width: 75%;
+    margin: 0 auto;
+    background-image: url('../images/darkBg.jpg');    
+    
+}
+
+.user {
+    height: auto;
+    width: 90%;
+    height: 20%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 120%;
+}
+
+.deed {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 3%;
+}
+
+.deedPic {
+    
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+.userHeadb{
+    float:right;
+}
+
+.avatar {
+    width: 5%;
+    margin: 5% 2% 5% 0;
+    padding: .5%;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+.spacer {
+    padding: 3%;
+
+}

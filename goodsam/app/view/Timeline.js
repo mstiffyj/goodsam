@@ -18,9 +18,30 @@ Ext.define('MyApp.view.Timeline', {
     alias: 'widget.timeline',
 
     config: {
+        id: 'timeline',
         store: 'data',
         itemTpl: [
-            '<div>{link}</div>'
+            '<div id="wrap">',
+            '    ',
+            '    <div class="user">',
+            '  ',
+            '        <img class= "avatar" src="{user.profile_picture}"/>',
+            '        ',
+            '        {user.username}',
+            '                ',
+            '    </div>',
+            '',
+            '    <div class="deed"><a href="{link}">',
+            '        ',
+            '        <img class="deedPic" src="{images.standard_resolution.url}"/></a>',
+            '   ',
+            '        <div class="caption">{caption.text}</div>',
+            '   ',
+            '    </div>',
+            '    <div class="spacer">',
+            '    </div>',
+            '    ',
+            '</div>'
         ]
     }
 

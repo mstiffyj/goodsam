@@ -24,6 +24,72 @@
                 "name": "link"
             },
             "designerId": "51601819-220f-4ac4-b118-4433eadc39e0"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field1",
+                "name": "user",
+                "mapping": null
+            },
+            "designerId": "0b90dc3b-60a5-4cd1-93ac-51656b76f55c"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field2",
+                "name": "images"
+            },
+            "designerId": "ebe11f42-0ea0-4492-8b60-bd9341a17435"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field3",
+                "name": "caption"
+            },
+            "designerId": "b06af19e-9719-4b79-8086-10ac1a788532"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field4",
+                "name": "likes"
+            },
+            "designerId": "aeb0dab4-adae-4cdd-9c66-145caceca45f"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field5",
+                "name": "id"
+            },
+            "designerId": "ddede0ab-a1c4-423b-b6c5-4f27d915b5bb"
         }
     ]
 }

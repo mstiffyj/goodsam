@@ -24,7 +24,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyJsonPProxy",
-                "url": "https://api.instagram.com/v1/media/popular?access_token=173936120.f59def8.0b91904cc11e4dd1858356ca4e9b1974"
+                "url": "https://api.instagram.com/v1/tags/gooddeed/media/recent?client_id=%207bff020e004c4170a0818f85dc8ebce4"
             },
             "designerId": "9c3ca8e6-9db6-4708-a547-e118ad78b333",
             "cn": [
