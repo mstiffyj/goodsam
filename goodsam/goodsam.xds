@@ -58,12 +58,21 @@
                 "metadata/resource/css"
             ],
             "className": "css"
+        },
+        "e2802d31-5560-4854-9387-fb7317b81dbc": {
+            "paths": [
+                "metadata/view/Login",
+                "app/view/override/Login.js",
+                "app/view/Login.js"
+            ],
+            "className": "Login"
         }
     },
     "viewOrderMap": {
         "view": [
             "f1843079-0715-4325-a66d-578ce9d70950",
-            "868f0a03-6891-402e-847b-db41d38ce985"
+            "868f0a03-6891-402e-847b-db41d38ce985",
+            "e2802d31-5560-4854-9387-fb7317b81dbc"
         ],
         "store": [
             "69a0576a-e469-48e2-b2cd-3dd5309357f0"

@@ -9,7 +9,7 @@ body {
     
 }
 
-#timeline {
+#timeline, #login {
     background-image: url('../images/bg.jpg');
     
 }
@@ -23,7 +23,7 @@ body {
 
 .user {
     height: auto;
-    width: 90%;
+    width: 80%;
     height: 20%;
     margin: 0 auto;
     color: #fff;
@@ -31,7 +31,7 @@ body {
 }
 
 .deed {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     background-color: #fff;
     padding: 3%;
@@ -60,4 +60,14 @@ body {
 .spacer {
     padding: 3%;
 
+}
+
+#formWrap {
+    margin: 20% auto;
+    width: 60%;
+}
+
+.label {
+    font-size: 100%;
+    
 }

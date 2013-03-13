@@ -26,7 +26,8 @@ Ext.application({
     ],
     views: [
         'Timeline',
-        'Viewport'
+        'Viewport',
+        'Login'
     ],
     name: 'MyApp',
 

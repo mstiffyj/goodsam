@@ -1,0 +1,101 @@
+{
+    "type": "formpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Login",
+        "designer|userAlias": "login",
+        "id": "login",
+        "ui": "",
+        "scrollable": [
+            "false"
+        ]
+    },
+    "id": "ExtBox1-ext-gen2441",
+    "designerId": "e2802d31-5560-4854-9387-fb7317b81dbc",
+    "cn": [
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyContainer",
+                "id": "formWrap"
+            },
+            "designerId": "efe9b6fe-a69d-4651-afcb-ecd0e976ee83",
+            "cn": [
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyTextField",
+                        "inputCls": "input",
+                        "label": "Username",
+                        "labelCls": "label",
+                        "name": "username"
+                    },
+                    "designerId": "820ec670-9d04-4169-9d86-cb37a8395959"
+                },
+                {
+                    "type": "passwordfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyPasswordField",
+                        "margin": "5% 0",
+                        "inputCls": "input",
+                        "label": "Password",
+                        "labelCls": "label",
+                        "name": "password"
+                    },
+                    "designerId": "93839b27-c124-440c-bda9-7816d7ae8995"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton",
+                        "id": "submit",
+                        "ui": "confirm",
+                        "iconCls": null,
+                        "iconMask": true,
+                        "text": "Log In"
+                    },
+                    "designerId": "94e98ff5-4f55-4bf5-9097-9aaf2f13b1b6"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton1",
+                        "margin": "5% 0",
+                        "ui": "action",
+                        "text": "Register"
+                    },
+                    "designerId": "422e3e38-14e1-4300-ae80-8e5a596e83f0"
+                }
+            ]
+        }
+    ]
+}
