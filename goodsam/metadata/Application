@@ -7,16 +7,16 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "MyModel"
+            "Instagram"
+        ],
+        "stores": [
+            "Data"
         ],
         "views": [
-            "MyContainer"
+            "Timeline"
         ],
-        "name": "MyApp",
-        "controllers": [
-            "MyController"
-        ]
+        "name": "MyApp"
     },
-    "id": "ExtBox1-ext-gen1728",
+    "id": "ExtBox1-ext-gen1762",
     "designerId": "application"
 }

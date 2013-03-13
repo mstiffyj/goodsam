@@ -1,0 +1,29 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Instagram",
+        "designer|userAlias": "instagram"
+    },
+    "id": "ExtBox1-ext-gen2125",
+    "designerId": "68977da9-4e45-4185-bb26-c7b53af01f7b",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field",
+                "name": "link"
+            },
+            "designerId": "51601819-220f-4ac4-b118-4433eadc39e0"
+        }
+    ]
+}

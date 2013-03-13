@@ -1,0 +1,34 @@
+{
+    "type": "dataview",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Timeline",
+        "designer|userAlias": "timeline",
+        "designer|initialView": true,
+        "store": "data"
+    },
+    "id": "ExtBox1-ext-gen2518",
+    "designerId": "f1843079-0715-4325-a66d-578ce9d70950",
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "<div>{link}</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "933f3cc7-123a-4cdc-91fd-215839068a30"
+        }
+    ]
+}

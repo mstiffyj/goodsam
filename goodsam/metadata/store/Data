@@ -1,0 +1,47 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Data",
+        "designer|userAlias": "data",
+        "autoLoad": true,
+        "model": "Instagram",
+        "storeId": "data"
+    },
+    "id": "ExtBox1-ext-gen2946",
+    "designerId": "69a0576a-e469-48e2-b2cd-3dd5309357f0",
+    "cn": [
+        {
+            "type": "jsonpproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy",
+                "url": "https://api.instagram.com/v1/media/popular?access_token=173936120.f59def8.0b91904cc11e4dd1858356ca4e9b1974"
+            },
+            "designerId": "9c3ca8e6-9db6-4708-a547-e118ad78b333",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader",
+                        "rootProperty": "data"
+                    },
+                    "designerId": "97ba280d-9244-48d7-a005-e647f606ac78"
+                }
+            ]
+        }
+    ]
+}
