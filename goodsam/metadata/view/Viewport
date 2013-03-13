@@ -22,6 +22,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "layout": "default",
+                "scrollable": [
+                    "true"
+                ],
                 "title": "Timeline",
                 "iconCls": "home"
             },

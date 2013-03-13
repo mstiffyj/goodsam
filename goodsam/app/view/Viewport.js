@@ -26,6 +26,10 @@ Ext.define('MyApp.view.Viewport', {
         items: [
             {
                 xtype: 'timeline',
+                layout: {
+                    type: 'default'
+                },
+                scrollable: true,
                 title: 'Timeline',
                 iconCls: 'home'
             },
