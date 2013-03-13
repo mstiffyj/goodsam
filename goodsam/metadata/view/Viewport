@@ -22,11 +22,27 @@
             },
             "codeClass": null,
             "userConfig": {
+                "layout": null,
                 "title": "Timeline",
                 "iconCls": "home"
             },
             "designerId": "bea5224a-a3e5-4f2e-8134-d42677d6a3dd",
             "masterInstanceId": "ExtBox1-ext-gen2518"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Profile",
+                "iconCls": "user",
+                "layout": null
+            },
+            "designerId": "6c9159df-a7c7-436e-9e4a-6d33f80d13fe",
+            "masterInstanceId": "ExtBox1-ext-gen5248"
         },
         {
             "type": "tabbar",

@@ -66,20 +66,47 @@
                 "app/view/Login.js"
             ],
             "className": "Login"
+        },
+        "a8105bd9-c5bf-4d57-a91d-266f23d84fd9": {
+            "paths": [
+                "metadata/view/Profile",
+                "app/view/override/Profile.js",
+                "app/view/Profile.js"
+            ],
+            "className": "Profile"
+        },
+        "da3a9aa1-b19c-4f43-a7e7-593070e8e3f2": {
+            "paths": [
+                "metadata/store/Database",
+                "app/store/override/Database.js",
+                "app/store/Database.js"
+            ],
+            "className": "Database"
+        },
+        "e3953fd6-9325-4fb6-9a39-10b3c00ca37a": {
+            "paths": [
+                "metadata/model/User",
+                "app/model/override/User.js",
+                "app/model/User.js"
+            ],
+            "className": "User"
         }
     },
     "viewOrderMap": {
         "view": [
-            "f1843079-0715-4325-a66d-578ce9d70950",
             "868f0a03-6891-402e-847b-db41d38ce985",
+            "f1843079-0715-4325-a66d-578ce9d70950",
+            "a8105bd9-c5bf-4d57-a91d-266f23d84fd9",
             "e2802d31-5560-4854-9387-fb7317b81dbc"
         ],
         "store": [
-            "69a0576a-e469-48e2-b2cd-3dd5309357f0"
+            "69a0576a-e469-48e2-b2cd-3dd5309357f0",
+            "da3a9aa1-b19c-4f43-a7e7-593070e8e3f2"
         ],
         "controller": [],
         "model": [
-            "68977da9-4e45-4185-bb26-c7b53af01f7b"
+            "68977da9-4e45-4185-bb26-c7b53af01f7b",
+            "e3953fd6-9325-4fb6-9a39-10b3c00ca37a"
         ],
         "resource": [
             "af4d2704-2190-451d-b7f4-bb101bb8913e",

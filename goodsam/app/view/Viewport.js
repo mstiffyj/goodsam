@@ -18,7 +18,8 @@ Ext.define('MyApp.view.Viewport', {
     alias: 'widget.viewport',
 
     requires: [
-        'MyApp.view.Timeline'
+        'MyApp.view.Timeline',
+        'MyApp.view.Profile'
     ],
 
     config: {
@@ -28,6 +29,11 @@ Ext.define('MyApp.view.Viewport', {
                 xtype: 'timeline',
                 title: 'Timeline',
                 iconCls: 'home'
+            },
+            {
+                xtype: 'profile',
+                title: 'Profile',
+                iconCls: 'user'
             },
             {
                 xtype: 'toolbar',
