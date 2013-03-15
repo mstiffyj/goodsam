@@ -9,6 +9,8 @@
         "designer|userClassName": "Login",
         "designer|userAlias": "login",
         "id": "login",
+        "showAnimation": null,
+        "style": null,
         "ui": "",
         "scrollable": [
             "false"
@@ -31,37 +33,80 @@
             "designerId": "efe9b6fe-a69d-4651-afcb-ecd0e976ee83",
             "cn": [
                 {
-                    "type": "textfield",
+                    "type": "label",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyTextField",
-                        "inputCls": "input",
-                        "label": "Username",
-                        "labelCls": "label",
-                        "name": "username"
+                        "designer|userClassName": "MyLabel",
+                        "hidden": true,
+                        "hideAnimation": [
+                            "fadeOut"
+                        ],
+                        "html": "Login failed. Please enter the correct credentials.",
+                        "itemId": "signInFailedLabel",
+                        "showAnimation": [
+                            "fadeIn"
+                        ],
+                        "style": "color:#990000;margin:5px 0px;"
                     },
-                    "designerId": "820ec670-9d04-4169-9d86-cb37a8395959"
+                    "designerId": "ad406c4d-40e9-4e3d-bad4-bffd5d927fdb"
                 },
                 {
-                    "type": "passwordfield",
+                    "type": "fieldset",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyPasswordField",
-                        "margin": "5% 0",
-                        "inputCls": "input",
-                        "label": "Password",
-                        "labelCls": "label",
-                        "name": "password"
+                        "designer|userClassName": "MyFieldSet",
+                        "title": null
                     },
-                    "designerId": "93839b27-c124-440c-bda9-7816d7ae8995"
+                    "designerId": "e344ba02-ebd9-46db-a41e-db966e26b7f6",
+                    "cn": [
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField",
+                                "itemId": "username",
+                                "inputCls": "input",
+                                "label": null,
+                                "labelCls": "label",
+                                "name": "username",
+                                "required": true,
+                                "placeHolder": "Username"
+                            },
+                            "designerId": "820ec670-9d04-4169-9d86-cb37a8395959"
+                        },
+                        {
+                            "type": "passwordfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyPasswordField",
+                                "itemId": "password",
+                                "margin": null,
+                                "inputCls": "input",
+                                "label": null,
+                                "labelCls": null,
+                                "name": "password",
+                                "required": true,
+                                "placeHolder": "Password"
+                            },
+                            "designerId": "93839b27-c124-440c-bda9-7816d7ae8995"
+                        }
+                    ]
                 },
                 {
                     "type": "button",
@@ -73,27 +118,13 @@
                     "userConfig": {
                         "designer|userClassName": "MyButton",
                         "id": "submit",
+                        "itemId": "submit",
                         "ui": "confirm",
                         "iconCls": null,
                         "iconMask": true,
                         "text": "Log In"
                     },
                     "designerId": "94e98ff5-4f55-4bf5-9097-9aaf2f13b1b6"
-                },
-                {
-                    "type": "button",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyButton1",
-                        "margin": "5% 0",
-                        "ui": "action",
-                        "text": "Register"
-                    },
-                    "designerId": "422e3e38-14e1-4300-ae80-8e5a596e83f0"
                 }
             ]
         }

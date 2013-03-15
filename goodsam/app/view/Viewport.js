@@ -43,7 +43,15 @@ Ext.define('MyApp.view.Viewport', {
                 layout: {
                     pack: 'end',
                     type: 'hbox'
-                }
+                },
+                items: [
+                    {
+                        xtype: 'button',
+                        itemId: 'logoff',
+                        iconMask: true,
+                        text: 'Sign Out'
+                    }
+                ]
             }
         ],
         tabBar: {

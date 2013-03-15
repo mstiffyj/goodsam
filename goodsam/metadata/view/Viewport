@@ -37,9 +37,9 @@
             },
             "codeClass": null,
             "userConfig": {
+                "layout": null,
                 "title": "Profile",
-                "iconCls": "user",
-                "layout": null
+                "iconCls": "user"
             },
             "designerId": "6c9159df-a7c7-436e-9e4a-6d33f80d13fe",
             "masterInstanceId": "ExtBox1-ext-gen5248"
@@ -72,7 +72,25 @@
                 "ui": "light",
                 "title": "GoodSam"
             },
-            "designerId": "371fc685-c4bf-4be4-a8c2-1d63ee236b43"
+            "designerId": "371fc685-c4bf-4be4-a8c2-1d63ee236b43",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyButton1",
+                        "itemId": "logoff",
+                        "iconCls": null,
+                        "iconMask": true,
+                        "text": "Sign Out"
+                    },
+                    "designerId": "710f0415-ab65-469e-b7ea-4f6ed9635688"
+                }
+            ]
         }
     ]
 }

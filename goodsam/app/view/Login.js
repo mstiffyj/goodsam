@@ -27,32 +27,43 @@ Ext.define('MyApp.view.Login', {
                 id: 'formWrap',
                 items: [
                     {
-                        xtype: 'textfield',
-                        inputCls: 'input',
-                        label: 'Username',
-                        labelCls: 'label',
-                        name: 'username'
+                        xtype: 'label',
+                        hidden: true,
+                        hideAnimation: 'fadeOut',
+                        html: 'Login failed. Please enter the correct credentials.',
+                        itemId: 'signInFailedLabel',
+                        showAnimation: 'fadeIn',
+                        style: 'color:#990000;margin:5px 0px;'
                     },
                     {
-                        xtype: 'passwordfield',
-                        margin: '5% 0',
-                        inputCls: 'input',
-                        label: 'Password',
-                        labelCls: 'label',
-                        name: 'password'
+                        xtype: 'fieldset',
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                itemId: 'username',
+                                inputCls: 'input',
+                                labelCls: 'label',
+                                name: 'username',
+                                required: true,
+                                placeHolder: 'Username'
+                            },
+                            {
+                                xtype: 'passwordfield',
+                                itemId: 'password',
+                                inputCls: 'input',
+                                name: 'password',
+                                required: true,
+                                placeHolder: 'Password'
+                            }
+                        ]
                     },
                     {
                         xtype: 'button',
                         id: 'submit',
+                        itemId: 'submit',
                         ui: 'confirm',
                         iconMask: true,
                         text: 'Log In'
-                    },
-                    {
-                        xtype: 'button',
-                        margin: '5% 0',
-                        ui: 'action',
-                        text: 'Register'
                     }
                 ]
             }
