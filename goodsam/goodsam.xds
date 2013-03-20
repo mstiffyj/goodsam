@@ -1,5 +1,5 @@
 {
-    "name": "Sencha_Architect_Demo",
+    "name": "goodsam",
     "settings": {
         "urlPrefix": "http://localhost/Sencha/Presentations/Sencha_Architect_Demo/",
         "spacesToIndent": 4,
@@ -109,14 +109,6 @@
             ],
             "className": "NewsDetails"
         },
-        "2adc78ef-918a-4448-b0c0-e01514074065": {
-            "paths": [
-                "metadata/resource/packager",
-                "",
-                "packager.json"
-            ],
-            "className": "packager"
-        },
         "0c72b429-03d4-4378-b84f-6c4e9cc8d04f": {
             "paths": [
                 "metadata/view/FeedEdit",
@@ -162,10 +154,43 @@
                 "app/model/Instagram.js"
             ],
             "className": "Instagram"
+        },
+        "afeb0076-5495-4692-a697-ba2bebf8b24a": {
+            "paths": [
+                "metadata/view/Users",
+                "app/view/override/Users.js",
+                "app/view/Users.js"
+            ],
+            "className": "Users"
+        },
+        "dd3b456b-2f76-47b0-8263-095bba350629": {
+            "paths": [
+                "metadata/store/Users",
+                "app/store/override/Users.js",
+                "app/store/Users.js"
+            ],
+            "className": "Users"
+        },
+        "c4b7dc6f-0457-469b-8fd9-91186cdf2cab": {
+            "paths": [
+                "metadata/controller/Users",
+                "app/controller/override/Users.js",
+                "app/controller/Users.js"
+            ],
+            "className": "Users"
+        },
+        "55c883fb-1717-4f9b-a1ab-8c9b2e52e5b3": {
+            "paths": [
+                "metadata/model/Users",
+                "app/model/override/Users.js",
+                "app/model/Users.js"
+            ],
+            "className": "Users"
         }
     },
     "viewOrderMap": {
         "view": [
+            "afeb0076-5495-4692-a697-ba2bebf8b24a",
             "a51b7ec1-d7d6-4e48-a6ea-cc2671585207",
             "420d38d3-713e-452f-b01c-9d402f8e6c90",
             "dd877428-85f4-4116-b7c4-2d076e952334",
@@ -176,22 +201,24 @@
             "be25f754-4122-421c-9e7c-6662f3e51ab0"
         ],
         "store": [
+            "dd3b456b-2f76-47b0-8263-095bba350629",
             "d2c6da0e-3a36-4e8e-a927-d3aa29233968",
             "a53720ea-1af4-4fca-b211-78a213dadfbe",
             "5a739720-7d23-4271-8282-8a3e491e51a7"
         ],
         "controller": [
+            "c4b7dc6f-0457-469b-8fd9-91186cdf2cab",
             "d091780b-3030-48a4-9cf8-d9e9302a513a",
             "eabdd1e8-11ea-4c6c-9f77-cc3755a3aeed"
         ],
         "model": [
+            "55c883fb-1717-4f9b-a1ab-8c9b2e52e5b3",
             "b8f12c9b-c8e4-4ea2-996d-e014c0383f5a",
             "936c1394-eefb-4fcc-bc22-e98d6906b554",
             "ceb12bfa-5122-471c-bd11-db2d8f94013f"
         ],
         "resource": [
             "c3d92702-bc9d-4bd2-8bbd-5153f9621a7f",
-            "2adc78ef-918a-4448-b0c0-e01514074065",
             "aace9870-1fff-42b3-8102-b8aca85481aa"
         ],
         "app": [
