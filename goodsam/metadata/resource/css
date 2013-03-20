@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "url": "css/main.css"
+        "url": "resources/css/app.css"
     },
-    "id": "ExtBox1-ext-gen22262",
-    "designerId": "01a0f667-ee17-4af0-bae3-1820d9e00fab"
+    "id": "ExtBox1-ext-gen2166",
+    "designerId": "aace9870-1fff-42b3-8102-b8aca85481aa"
 }

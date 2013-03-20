@@ -19,24 +19,34 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'Instagram',
-        'User'
+        'Feed',
+        'News',
+        'Instagram'
     ],
     stores: [
-        'Data',
-        'Database'
+        'Feeds',
+        'News',
+        'Data'
     ],
     views: [
-        'Timeline',
-        'Viewport',
+        'Main',
         'Login',
-        'Profile'
+        'Feeds',
+        'News',
+        'NewsDetails',
+        'FeedEdit',
+        'Viewport',
+        'Timeline'
     ],
-    name: 'MyApp',
+    name: 'RSS',
+    controllers: [
+        'Main',
+        'Feeds'
+    ],
 
     launch: function() {
 
-        Ext.create('MyApp.view.Viewport', {fullscreen: true});
+        Ext.create('RSS.view.Viewport', {fullscreen: true});
     }
 
 });

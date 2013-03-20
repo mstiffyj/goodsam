@@ -13,13 +13,16 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.view.Timeline', {
+Ext.define('RSS.view.Timeline', {
     extend: 'Ext.dataview.DataView',
-    alias: 'widget.timeline',
+    alias: 'widget.timelineview',
 
     config: {
         id: 'timeline',
         store: 'data',
+        cls: [
+            'timeline-view'
+        ],
         itemTpl: [
             '<div id="wrap">',
             '    ',

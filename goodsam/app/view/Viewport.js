@@ -13,51 +13,38 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.view.Viewport', {
+Ext.define('RSS.view.Viewport', {
     extend: 'Ext.tab.Panel',
-    alias: 'widget.viewport',
+    alias: 'widget.viewportview',
 
     requires: [
-        'MyApp.view.Timeline',
-        'MyApp.view.Profile'
+        'RSS.view.Main',
+        'RSS.view.Timeline'
     ],
 
     config: {
-        id: 'viewport',
+        cls: 'viewport-view',
+        tabBar: {
+            docked: 'bottom'
+        },
         items: [
-            {
-                xtype: 'timeline',
-                title: 'Timeline',
-                iconCls: 'home'
-            },
-            {
-                xtype: 'profile',
-                title: 'Profile',
-                iconCls: 'user'
-            },
             {
                 xtype: 'toolbar',
                 docked: 'top',
                 ui: 'light',
-                title: 'GoodSam',
-                layout: {
-                    pack: 'end',
-                    type: 'hbox'
-                },
-                items: [
-                    {
-                        xtype: 'button',
-                        itemId: 'logoff',
-                        iconMask: true,
-                        text: 'Sign Out'
-                    }
-                ]
+                title: 'GoodSam'
+            },
+            {
+                xtype: 'mainview',
+                title: 'Feeds',
+                iconCls: 'bookmarks'
+            },
+            {
+                xtype: 'timelineview',
+                title: 'Timeline',
+                iconCls: 'time'
             }
-        ],
-        tabBar: {
-            docked: 'bottom',
-            ui: 'light'
-        }
+        ]
     }
 
 });

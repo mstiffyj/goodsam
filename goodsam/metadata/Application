@@ -7,21 +7,31 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "Instagram",
-            "User"
+            "Feed",
+            "News",
+            "Instagram"
         ],
         "stores": [
-            "Data",
-            "Database"
+            "Feeds",
+            "News",
+            "Data"
         ],
         "views": [
-            "Timeline",
-            "Viewport",
+            "Main",
             "Login",
-            "Profile"
+            "Feeds",
+            "News",
+            "NewsDetails",
+            "FeedEdit",
+            "Viewport",
+            "Timeline"
         ],
-        "name": "MyApp"
+        "name": "RSS",
+        "controllers": [
+            "Main",
+            "Feeds"
+        ]
     },
-    "id": "ExtBox1-ext-gen1762",
+    "id": "ExtBox1-ext-gen1580",
     "designerId": "application"
 }

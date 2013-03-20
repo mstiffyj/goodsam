@@ -13,17 +13,17 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.store.Data', {
+Ext.define('RSS.store.Data', {
     extend: 'Ext.data.Store',
     alias: 'store.data',
 
     requires: [
-        'MyApp.model.Instagram'
+        'RSS.model.Instagram'
     ],
 
     config: {
         autoLoad: true,
-        model: 'MyApp.model.Instagram',
+        model: 'RSS.model.Instagram',
         storeId: 'data',
         proxy: {
             type: 'jsonp',

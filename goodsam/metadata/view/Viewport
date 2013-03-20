@@ -7,43 +7,13 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "Viewport",
-        "designer|userAlias": "viewport",
+        "designer|userAlias": "viewportview",
         "designer|initialView": true,
-        "id": "viewport"
+        "cls": "viewport-view"
     },
-    "id": "ExtBox1-ext-gen10686",
-    "designerId": "868f0a03-6891-402e-847b-db41d38ce985",
+    "id": "ExtBox1-ext-gen10788",
+    "designerId": "3ded5ea1-071f-4c80-b4af-6b53e02078ef",
     "cn": [
-        {
-            "type": "linkedinstance",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "layout": null,
-                "title": "Timeline",
-                "iconCls": "home"
-            },
-            "designerId": "bea5224a-a3e5-4f2e-8134-d42677d6a3dd",
-            "masterInstanceId": "ExtBox1-ext-gen2518"
-        },
-        {
-            "type": "linkedinstance",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "layout": null,
-                "title": "Profile",
-                "iconCls": "user"
-            },
-            "designerId": "6c9159df-a7c7-436e-9e4a-6d33f80d13fe",
-            "masterInstanceId": "ExtBox1-ext-gen5248"
-        },
         {
             "type": "tabbar",
             "reference": {
@@ -53,10 +23,9 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyTabBar",
-                "docked": "bottom",
-                "ui": "light"
+                "docked": "bottom"
             },
-            "designerId": "604b4832-4e7c-426f-a023-690b07595970"
+            "designerId": "979a73d5-b955-400a-b0be-00e71279a2d3"
         },
         {
             "type": "toolbar",
@@ -66,31 +35,40 @@
             },
             "codeClass": null,
             "userConfig": {
-                "container|pack": "end",
                 "designer|userClassName": "MyToolbar",
                 "docked": "top",
                 "ui": "light",
                 "title": "GoodSam"
             },
-            "designerId": "371fc685-c4bf-4be4-a8c2-1d63ee236b43",
-            "cn": [
-                {
-                    "type": "button",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyButton1",
-                        "itemId": "logoff",
-                        "iconCls": null,
-                        "iconMask": true,
-                        "text": "Sign Out"
-                    },
-                    "designerId": "710f0415-ab65-469e-b7ea-4f6ed9635688"
-                }
-            ]
+            "designerId": "8f1591fd-e497-4675-899d-fbcf0664fbea"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Feeds",
+                "iconCls": "bookmarks"
+            },
+            "designerId": "2dbaf480-0347-499d-959a-1573e5a3e1d7",
+            "masterInstanceId": "ExtBox1-ext-gen2070"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Timeline",
+                "iconCls": "time"
+            },
+            "designerId": "7efca6e0-333d-46db-8a5f-3f780ae2a0bb",
+            "masterInstanceId": "ExtBox1-ext-gen2633"
         }
     ]
 }

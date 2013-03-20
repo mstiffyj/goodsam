@@ -13,59 +13,34 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.view.Login', {
+Ext.define('RSS.view.Login', {
     extend: 'Ext.form.Panel',
-    alias: 'widget.login',
+    alias: 'widget.loginview',
 
     config: {
-        id: 'login',
-        ui: '',
-        scrollable: false,
         items: [
             {
-                xtype: 'container',
-                id: 'formWrap',
+                xtype: 'fieldset',
+                title: '',
                 items: [
                     {
-                        xtype: 'label',
-                        hidden: true,
-                        hideAnimation: 'fadeOut',
-                        html: 'Login failed. Please enter the correct credentials.',
-                        itemId: 'signInFailedLabel',
-                        showAnimation: 'fadeIn',
-                        style: 'color:#990000;margin:5px 0px;'
+                        xtype: 'textfield',
+                        label: 'Username',
+                        name: 'username'
                     },
                     {
-                        xtype: 'fieldset',
-                        items: [
-                            {
-                                xtype: 'textfield',
-                                itemId: 'username',
-                                inputCls: 'input',
-                                labelCls: 'label',
-                                name: 'username',
-                                required: true,
-                                placeHolder: 'Username'
-                            },
-                            {
-                                xtype: 'passwordfield',
-                                itemId: 'password',
-                                inputCls: 'input',
-                                name: 'password',
-                                required: true,
-                                placeHolder: 'Password'
-                            }
-                        ]
-                    },
-                    {
-                        xtype: 'button',
-                        id: 'submit',
-                        itemId: 'submit',
-                        ui: 'confirm',
-                        iconMask: true,
-                        text: 'Log In'
+                        xtype: 'passwordfield',
+                        label: 'Password',
+                        name: 'password'
                     }
                 ]
+            },
+            {
+                xtype: 'button',
+                action: 'login',
+                height: 50,
+                ui: 'action',
+                text: 'Login'
             }
         ]
     }

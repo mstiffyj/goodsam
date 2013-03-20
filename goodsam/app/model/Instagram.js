@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.model.Instagram', {
+Ext.define('RSS.model.Instagram', {
     extend: 'Ext.data.Model',
     alias: 'model.instagram',
 
@@ -32,10 +32,10 @@ Ext.define('MyApp.model.Instagram', {
                 name: 'caption'
             },
             {
-                name: 'likes'
+                name: 'id'
             },
             {
-                name: 'id'
+                name: 'likes'
             }
         ]
     }

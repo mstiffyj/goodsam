@@ -12,8 +12,8 @@
         "model": "Instagram",
         "storeId": "data"
     },
-    "id": "ExtBox1-ext-gen2946",
-    "designerId": "69a0576a-e469-48e2-b2cd-3dd5309357f0",
+    "id": "ExtBox1-ext-gen5697",
+    "designerId": "5a739720-7d23-4271-8282-8a3e491e51a7",
     "cn": [
         {
             "type": "jsonpproxy",
@@ -23,10 +23,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyJsonPProxy",
+                "designer|userClassName": "MyJsonPProxy1",
                 "url": "https://api.instagram.com/v1/tags/gooddeed/media/recent?client_id=%207bff020e004c4170a0818f85dc8ebce4"
             },
-            "designerId": "9c3ca8e6-9db6-4708-a547-e118ad78b333",
+            "designerId": "f0958170-fe45-4c7f-be90-dd7b9072a832",
             "cn": [
                 {
                     "type": "jsonreader",
@@ -36,10 +36,10 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyJsonReader",
+                        "designer|userClassName": "MyJsonReader2",
                         "rootProperty": "data"
                     },
-                    "designerId": "97ba280d-9244-48d7-a005-e647f606ac78"
+                    "designerId": "789f8833-db1b-4316-a60e-667c441b58af"
                 }
             ]
         }

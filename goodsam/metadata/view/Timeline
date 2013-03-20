@@ -7,12 +7,15 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "Timeline",
-        "designer|userAlias": "timeline",
+        "designer|userAlias": "timelineview",
+        "cls": [
+            "timeline-view"
+        ],
         "id": "timeline",
         "store": "data"
     },
-    "id": "ExtBox1-ext-gen2518",
-    "designerId": "f1843079-0715-4325-a66d-578ce9d70950",
+    "id": "ExtBox1-ext-gen2633",
+    "designerId": "be25f754-4122-421c-9e7c-6662f3e51ab0",
     "cn": [
         {
             "type": "template",
@@ -48,7 +51,7 @@
                 ],
                 "designer|displayName": "itemTpl"
             },
-            "designerId": "933f3cc7-123a-4cdc-91fd-215839068a30"
+            "designerId": "495acd35-dacc-43b7-b3d3-d5375da1f1d6"
         }
     ]
 }
