@@ -1,0 +1,105 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Users"
+    },
+    "id": "ExtBox1-ext-gen7317",
+    "designerId": "55c883fb-1717-4f9b-a1ab-8c9b2e52e5b3",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field13",
+                "name": "name",
+                "type": "string"
+            },
+            "designerId": "8f522637-b7f6-4739-bf59-b7a68f0a2878"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field14",
+                "name": "surname",
+                "type": "string"
+            },
+            "designerId": "4dc49b42-0a83-4f02-8b22-54107f98b1bd"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field15",
+                "name": "username",
+                "type": "string"
+            },
+            "designerId": "496550d0-c4b6-4b92-aa0f-4b2ed250da6f"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field16",
+                "name": "id",
+                "type": "int"
+            },
+            "designerId": "8747b7f7-d611-4263-b78d-40448bd8c873"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field17",
+                "name": "email",
+                "type": "string"
+            },
+            "designerId": "150f333d-868a-4c80-b707-7f796ff91882"
+        },
+        {
+            "type": "restproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyRestProxy1",
+                "api": [
+                    "{",
+                    "    create: 'api/v1/users/new',",
+                    "    read: 'api/v1/users/all',",
+                    "    update: 'api/v1/users/update',",
+                    "    destroy: 'api/v1/users/remove'",
+                    "}"
+                ]
+            },
+            "designerId": "bbf078c8-1ef9-4ac0-bf98-840a732b526f"
+        }
+    ]
+}

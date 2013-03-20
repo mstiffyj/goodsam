@@ -185,7 +185,8 @@
                     "window.localStorage.user = Ext.encode(user);",
                     "this.getApplication().fireEvent('showfeeds');",
                     "this.showLogoutButton();",
-                    "this.showNewFeedButton();"
+                    "this.showNewFeedButton();",
+                    "this.showUsersButton();"
                 ]
             },
             "designerId": "95cb66a6-4ec3-4d29-8d9e-6890acb54707"
@@ -304,6 +305,8 @@
                     "view instanceof RSS.view.FeedEdit){",
                     "    this.hideLogoutButton();",
                     "    this.hideNewFeedButton();",
+                    "    this.hideUsersButton();",
+                    "",
                     "}"
                 ],
                 "name": "push",
@@ -327,6 +330,8 @@
                     "view instanceof RSS.view.FeedEdit){",
                     "    this.showLogoutButton();",
                     "    this.showNewFeedButton();",
+                    "    this.showUsersButton();",
+                    "",
                     "}"
                 ],
                 "name": "pop",
@@ -373,6 +378,64 @@
                 "selector": "button[action=newfeed]"
             },
             "designerId": "98647b33-497b-4778-bbe3-087758bec8bb"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "usersButton",
+                "ref": "usersButton",
+                "selector": "button[action=users]",
+                "xtype": null
+            },
+            "designerId": "cfe0466e-fb8d-47e0-8874-fbf0b7c5cfa7"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "showUsersButton",
+                "fn": "showUsersButton",
+                "implHandler": [
+                    "this.getMainView().getNavigationBar().add({",
+                    "    xtype: 'button',",
+                    "    action: 'users',",
+                    "    ui: 'action',",
+                    "    iconMask: true,",
+                    "    iconCls: 'user',",
+                    "    align: 'right'",
+                    "});",
+                    "",
+                    "this.getUsersButton ().show({",
+                    "    type: 'pop'",
+                    "});"
+                ]
+            },
+            "designerId": "6c0d0869-4f58-4518-a433-43d5b7e15e26"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "hideUsersButton",
+                "fn": "hideUsersButton",
+                "implHandler": [
+                    "this.getUsersButton().destroy(true);"
+                ]
+            },
+            "designerId": "56672003-ec03-43d5-9ee3-db05ba96318d"
         }
     ]
 }

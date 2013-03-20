@@ -21,12 +21,14 @@ Ext.application({
     models: [
         'Feed',
         'News',
-        'Instagram'
+        'Instagram',
+        'Users'
     ],
     stores: [
         'Feeds',
         'News',
-        'Data'
+        'Data',
+        'Users'
     ],
     views: [
         'Main',
@@ -36,12 +38,14 @@ Ext.application({
         'NewsDetails',
         'FeedEdit',
         'Viewport',
-        'Timeline'
+        'Timeline',
+        'Users'
     ],
     name: 'RSS',
     controllers: [
         'Main',
-        'Feeds'
+        'Feeds',
+        'Users'
     ],
 
     launch: function() {

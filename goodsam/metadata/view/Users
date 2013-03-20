@@ -1,0 +1,45 @@
+{
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "title": null,
+        "designer|userClassName": "Users",
+        "designer|userAlias": "usersview",
+        "cls": [
+            "users-view"
+        ],
+        "store": "Users",
+        "onItemDisclosure": true
+    },
+    "id": "ExtBox1-ext-gen8353",
+    "designerId": "afeb0076-5495-4692-a697-ba2bebf8b24a",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "title",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "<div class=\"name\">{name}</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "63837390-6865-4537-a354-92909273e19b"
+        }
+    ]
+}

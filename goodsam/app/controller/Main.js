@@ -29,7 +29,8 @@ Ext.define('RSS.controller.Main', {
                 xtype: 'loginview'
             },
             logoutButton: 'button[action=logout]',
-            newFeedButton: 'button[action=newfeed]'
+            newFeedButton: 'button[action=newfeed]',
+            usersButton: 'button[action=users]'
         },
 
         control: {
@@ -65,6 +66,8 @@ Ext.define('RSS.controller.Main', {
         view instanceof RSS.view.FeedEdit){
             this.hideLogoutButton();
             this.hideNewFeedButton();
+            this.hideUsersButton();
+
         }
     },
 
@@ -73,6 +76,8 @@ Ext.define('RSS.controller.Main', {
         view instanceof RSS.view.FeedEdit){
             this.showLogoutButton();
             this.showNewFeedButton();
+            this.showUsersButton();
+
         }
     },
 
@@ -129,6 +134,7 @@ Ext.define('RSS.controller.Main', {
         this.getApplication().fireEvent('showfeeds');
         this.showLogoutButton();
         this.showNewFeedButton();
+        this.showUsersButton();
     },
 
     showLogoutButton: function() {
@@ -166,6 +172,25 @@ Ext.define('RSS.controller.Main', {
     hideNewFeedButton: function() {
         this.getNewFeedButton().destroy(true);
 
+    },
+
+    showUsersButton: function() {
+        this.getMainView().getNavigationBar().add({
+            xtype: 'button',
+            action: 'users',
+            ui: 'action',
+            iconMask: true,
+            iconCls: 'user',
+            align: 'right'
+        });
+
+        this.getUsersButton ().show({
+            type: 'pop'
+        });
+    },
+
+    hideUsersButton: function() {
+        this.getUsersButton().destroy(true);
     },
 
     init: function(application) {

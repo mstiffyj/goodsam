@@ -195,7 +195,7 @@
                 "implHandler": [
                     "var view = this.getFeedEditView(),",
                     "    form = view.down('formpanel');",
-                    " ",
+                    "",
                     "form.setRecord(record);",
                     "",
                     "this.getApplication().fireEvent('showview', view);",

@@ -111,7 +111,7 @@
             "codeClass": null,
             "userConfig": {
                 "matcher": [
-                    "/^http:\\/\\/feeds.feedburner.com\\/.?/"
+                    "/^http:\\/\\/.?/"
                 ],
                 "designer|userClassName": "MyFormatValidation",
                 "designer|displayName": "urlFormatValidation",

@@ -1,0 +1,70 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Users"
+    },
+    "id": "ExtBox1-ext-gen4277",
+    "designerId": "c4b7dc6f-0457-469b-8fd9-91186cdf2cab",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "usersView",
+                "autoCreate": true,
+                "ref": "usersView",
+                "selector": "usersview",
+                "xtype": "usersview"
+            },
+            "designerId": "8344637b-6b93-4114-9827-41a2c80fa437"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onUsersTap",
+                "fn": "onUsersTap",
+                "implHandler": [
+                    "this.getApplication().fireEvent('showusers');",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button[action=users]"
+            },
+            "designerId": "a9a60141-7fae-4286-bb55-a9ee809285f1"
+        },
+        {
+            "type": "applicationaction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onShowusers",
+                "fn": "onShowusers",
+                "implHandler": [
+                    "this.getApplication().fireEvent('showview', this.getUsersView());",
+                    "Ext.getStore('Users').load();"
+                ],
+                "name": "showusers",
+                "scope": "this"
+            },
+            "designerId": "25682a97-15ae-4330-8d40-459fbe400445"
+        }
+    ]
+}
