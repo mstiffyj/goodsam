@@ -30,7 +30,12 @@ Ext.define('RSS.controller.Main', {
             },
             logoutButton: 'button[action=logout]',
             newFeedButton: 'button[action=newfeed]',
-            usersButton: 'button[action=users]'
+            usersButton: 'button[action=users]',
+            registerView: {
+                autoCreate: true,
+                selector: 'registerview',
+                xtype: 'registerview'
+            }
         },
 
         control: {
@@ -43,6 +48,12 @@ Ext.define('RSS.controller.Main', {
             },
             "button[action=logout]": {
                 tap: 'onLogout'
+            },
+            "loginview button[action=registerview]": {
+                tap: 'onRegisterTap'
+            },
+            "registerview button[action=register]": {
+                tap: 'onRegTap'
             }
         }
     },
@@ -89,6 +100,25 @@ Ext.define('RSS.controller.Main', {
             }
         });
 
+    },
+
+    onRegisterTap: function(button, e, options) {
+        this.getApplication().fireEvent('showview', this.getRegisterView());
+
+    },
+
+    onRegTap: function(button, e, options) {
+        this.getLoginView().submit({
+            url: 'api/v1/users/create',
+            method: 'POST',
+            scope: this,
+            success: function(form, response){
+                Ext.Msg.alert('Registration Successful', 'Please log in.');
+            },
+            failure: function(form, response){
+                Ext.Msg.alert('Registration Failed', 'Please try again.');
+            }
+        });
     },
 
     showView: function(view) {

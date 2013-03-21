@@ -24,7 +24,14 @@ Ext.define('RSS.view.Users', {
             'users-view'
         ],
         itemTpl: [
-            '<div class="name">{name}</div>'
+            '<div class="name">',
+            '',
+            '    <div class="profileTitle"><div class="strong">Username:</div> <div class="info">{username}</div></div>',
+            '    <div class="profileTitle"><div class="strong">Name:</div><div class="info">{name}</div></div>',
+            '    <div class="profileTitle"><div class="strong">Email:</div><div class="info">{email}</div></div>',
+            '        ',
+            '',
+            '</div>'
         ]
     }
 

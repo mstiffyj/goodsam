@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.25)
 # Database: SocialReader
-# Generation Time: 2013-03-20 18:09:29 +0000
+# Generation Time: 2013-03-21 04:37:36 +0000
 # ************************************************************
 
 
@@ -43,7 +43,9 @@ VALUES
 	(2,1,'Topix Charity News','http://feeds.feedburner.com/CharityNews'),
 	(6,2,'Charity','http://feeds.feedburner.com/NewsfeedtagCharityNewsfeedTimecom'),
 	(7,1,'MSNBC Giving','http://feeds.feedburner.com/nbcnews/wMPs'),
-	(8,3,'UK Charity Commission Press Releases','http://feeds.feedburner.com/CharityCommissionPressReleases');
+	(8,3,'UK Charity Commission Press Releases','http://feeds.feedburner.com/CharityCommissionPressReleases'),
+	(9,3,'Charity Insight','http://www.charityinsight.com/features/rss'),
+	(11,3,'Good News Network','http://www.goodnewsnetwork.org/feed/rss/all-content.html');
 
 /*!40000 ALTER TABLE `feeds` ENABLE KEYS */;
 UNLOCK TABLES;

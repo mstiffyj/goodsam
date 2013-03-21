@@ -7,10 +7,10 @@ class Feed extends CI_Model {
     var $url   = '';
 
     /**
-     * Crea un nuovo feed che verrà associato all'utente
-     * attualmente loggato.
-     * @param {Array} feed Array contenente tutte le informazioni
-     * relative al nuovo feed che dovrà essere creato.
+     * Create a new feed that will be associated with the user
+      * Currently logged.
+      * @ Param {Array} Array feed containing all the information
+      * For the new feed to be created.
      */
     public function create($feed){
 
@@ -23,9 +23,9 @@ class Feed extends CI_Model {
 	}
 	
 	/**
-	 * Elimina il feed specificato assegato all'utente indicato.
-	 * @param {Number} user_id Identificativo univoco dell'utente attualmente loggato.
-	 * @param {Number} feed_id Identificativo univoco assegnato al feed da eliminare.
+	 * Delete the specified feed assegato to the specified user.
+	 * @ Param {Number} user_id The unique identifier of the user currently logged on.
+	 * @ Param {Number} feed_id unique identifier assigned to the feed to delete.
 	 */
 	public function delete($user_id, $feed_id){
 
@@ -36,11 +36,11 @@ class Feed extends CI_Model {
 	}
 	
 	/**
-	 * Aggiorna il feed specificato con le nuove informazioni fornite.
-	 * @param {Number} id Identificativo univoco assegnato al feed da eliminare.
-	 * @param {String} name Il nuovo nome da assegnare al Feed.
-     * @param {String} url Nuovo Url mediante il quale è possibile raggiungere il feed.
-	 */
+	 * Update the feed specified with the new information provided.
+	 * @ Param {Number} id unique identifier assigned to the feed to delete.
+	 * @ Param {String} name The new name for the Feed.
+      * @ Param {String} url New URL by which you can reach the feed.	 
+	*/
 	public function update($id, $name, $url){
 
 		$sql = "UPDATE feeds SET name = ?, url = ? WHERE id = ?";
@@ -50,9 +50,9 @@ class Feed extends CI_Model {
 	}
 
     /**
-     * Reperisce la lista di tutti i feeds associati
-     * all'utente che ha effettuato la connessione.
-     * @param {Number} user_id Identificativo univoco assegnato all'utente attualmente loggato.
+     * Retrieves the list of all feeds associated
+      * The user who made the connection.
+      * @ Param {Number} user_id unique identifier assigned to the user currently logged on.
      */
     public function all($user_id){
 	

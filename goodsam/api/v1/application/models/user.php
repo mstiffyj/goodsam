@@ -10,29 +10,47 @@ class User extends CI_Model {
     var $email                = '';
     
     /**
-     * Conesente all'utente di effettuare il login e poter quindi
-     * iniziare a consumare le REST api.
-     * @param {String} username Username di autenticazione. 
-     * @param {String} password Password di autenticazione.
-     * @return {User/Boolean} Le informazioni complete associate all'utente
-     * che ha effettuato il login in caso di autenticazione avvenuta
-     * con successo, altrimenti false.
+     * Allows the user to login and then to
+      * Start to consume REST API.
+      * @ Param {String} username Username for authentication.
+      * @ Param {String} password authentication.
+      * @ Return {User / Boolean} The complete information associated with the user
+      * That is logged when login successful
+      * Successful, otherwise false.
      */
     public function login($username, $password)
     {
 	
-	    // Definizione della query di reperimento info utente
+	    // Define the query to find user info
 		$sql = "SELECT *".
 	           " FROM users".
 	           " WHERE username = ?".
 	           " AND password = ?";
 
-        // Tentativo di reperimento delle informazioni associate all'utente che sta effettuando l'accesso
+        // Trying to find the information associated with the user that is accessing
 		$user = $this->db->query($sql, array($username, $password))->result();
 		
 		return $user ? $user[0] : false;
 
     }
+    
+     public function all($id){
+	
+		$sql = "SELECT * FROM users WHERE id = ?";
+		$users = $this->db->query($sql, array($id))->result();
+		return $users;
+
+    }
+    
+    public function create($user){
+
+		$sql = "INSERT INTO users (id, name, surname, username, password, email)".
+	           " VALUES (?, ?, ?, ?, ?, ?)";
+
+	    $success = $this->db->query($sql, $user);
+	    return $success ? $user : false;    
+	
+	}
 
 }
 

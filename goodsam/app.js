@@ -22,7 +22,7 @@ Ext.application({
         'Feed',
         'News',
         'Instagram',
-        'Users'
+        'User'
     ],
     stores: [
         'Feeds',
@@ -39,7 +39,8 @@ Ext.application({
         'FeedEdit',
         'Viewport',
         'Timeline',
-        'Users'
+        'Users',
+        'Register'
     ],
     name: 'RSS',
     controllers: [

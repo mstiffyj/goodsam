@@ -29,6 +29,10 @@ Ext.define('RSS.model.Feed', {
             {
                 name: 'url',
                 type: 'string'
+            },
+            {
+                name: 'user_id',
+                type: 'int'
             }
         ],
         proxy: {

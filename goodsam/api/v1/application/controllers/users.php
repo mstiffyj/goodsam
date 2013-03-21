@@ -5,8 +5,8 @@ require APPPATH.'/libraries/REST_Controller.php';
 class Users extends REST_Controller {
     
     /**
-     * Permette all'utente che sta utilizzando l'applicazione
-     * di effettuare il login.
+      * Allows the user who is using the application
+      * To login.
      */
     public function login_post(){
         
@@ -14,14 +14,14 @@ class Users extends REST_Controller {
         $this->load->model('User');
         $user = $this->User->login($this->post('username'), $this->post('password'));
         
-        // Controlla se l'utente è stato trovato
+        // Check if the user has been found
         if($user){
             
-            /* Memorizzazione dell'utente all'interno
-             * di una variabile di sessione. */
+            /* Storing user within
+              * A session variable. */
             $_SESSION['user'] = $user;
             
-            // Autenticazione avvenuta con successo
+            //Authentication successful
             $this->response(
                 array(
                     "success" => "true",
@@ -33,7 +33,7 @@ class Users extends REST_Controller {
         }
         else {
             
-            // Autenticazione fallita
+            // authentication failed
             $this->response(
                 array(
                     "success" => "false"
@@ -44,5 +44,60 @@ class Users extends REST_Controller {
         }
 
     }
+        
+    public function all_get(){
+    
+        session_start();
+        $this->load->model('User');
+        $feeds = $this->User->all($_SESSION['user']->id);
+
+        $this->response(
+            array(
+                "success" => "true",
+                "total" => count($feeds),
+                "data" => $feeds
+            ), 
+            200
+        );
+    
+    }
+    
+    public function new_post(){
+    
+        $user = $this->User->create(
+            array(
+                "id" => null,
+                "username" => $this->post('username'),
+                "name" => $this->post('first'),
+                "surnmae" => $this->post('last'),
+                "email" => $this->post('email'),
+                "password" => $this->post('password')
+            )
+        );
+
+        if($user){
+
+            $this->response(
+                array(
+                    "success" => "true"
+                ), 
+                200
+            );
+
+        }
+        else{
+        
+            $this->response(
+                array(
+                    "success" => "false"
+                ), 
+                403
+            );
+
+        }
+
+    }
+
+
     
 }

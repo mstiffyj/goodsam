@@ -5,12 +5,12 @@ require APPPATH.'/libraries/REST_Controller.php';
 class Feeds extends REST_Controller {
 
     /**
-     * Crea un nuovo Feed e lo associa all'utente che ha
-     * effettuato il login.
-     * I seguenti parametri vengono inviati tramite
-     * operazione HTTP di POST:
-     * @param {String} name Il nuovo nome da assegnare al Feed.
-     * @param {String} url Nuovo Url mediante il quale è possibile raggiungere il feed.
+     * Create a new feed and associates it with the user who
+      * Login.
+      * The following parameters are sent via
+      * HTTP POST operation:
+      * @ Param {String} name The new name for the Feed.
+      * @ Param {String} url New URL by which you can reach the feed.
      */
     public function new_post(){
     
@@ -49,13 +49,13 @@ class Feeds extends REST_Controller {
     }
 
     /**
-     * Aggiorna il feed indicato con le nuove
-     * informazioni specificate.
-     * I seguenti parametri vengono inviati tramite
-     * operazione HTTP di PUT:
-     * @param {Number} id Identificativo univoco assegnato al feed da modificare.
-     * @param {String} name Il nuovo nome da assegnare al Feed.
-     * @param {String} url Nuovo Url mediante il quale è possibile raggiungere il feed.
+     * Update the feed given to the new
+      * Specified information.
+      * The following parameters are sent via
+      * HTTP PUT operation:
+      * @ Param {Number} id unique identifier assigned to the feed to change.
+      * @ Param {String} name The new name for the Feed.
+      * @ Param {String} url New URL by which you can reach the feed.
      */
     public function update_put(){
 
@@ -66,9 +66,9 @@ class Feeds extends REST_Controller {
     }
 
     /**
-     * Rimuove il feed al quale è stato impostato l'id specificato
-     * associato all'utente che ha effettuato il login.
-     * @param {Number} id Identificativo univoco assegnato al feed da eliminare.
+     * Removes the feed to which you have set the specified id
+      * Associated with the user that is logged.
+      * @ Param {Number} id unique identifier assigned to the feed to delete.
      */
     public function remove_delete($id){
     
@@ -80,8 +80,8 @@ class Feeds extends REST_Controller {
     }
 
     /**
-     * Reperisce la lista di tutti i feeds associati
-     * all'utente che ha effettuato la connessione.
+     * Retrieves the list of all feeds associated
+      * The user who made the connection.
      */
     public function all_get(){
     

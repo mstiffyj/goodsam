@@ -10,7 +10,7 @@
             "Feed",
             "News",
             "Instagram",
-            "Users"
+            "User"
         ],
         "stores": [
             "Feeds",
@@ -27,7 +27,8 @@
             "FeedEdit",
             "Viewport",
             "Timeline",
-            "Users"
+            "Users",
+            "Register"
         ],
         "name": "RSS",
         "controllers": [

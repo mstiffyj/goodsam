@@ -17,11 +17,11 @@ Ext.define('RSS.store.Users', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'RSS.model.Users'
+        'RSS.model.User'
     ],
 
     config: {
-        model: 'RSS.model.Users',
+        model: 'RSS.model.User',
         storeId: 'Users',
         proxy: {
             type: 'ajax',

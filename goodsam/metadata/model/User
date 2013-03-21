@@ -6,7 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Users"
+        "designer|userClassName": "User",
+        "identifier": [
+            "{type: \"simple\"}"
+        ]
     },
     "id": "ExtBox1-ext-gen7317",
     "designerId": "55c883fb-1717-4f9b-a1ab-8c9b2e52e5b3",

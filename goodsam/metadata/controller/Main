@@ -436,6 +436,71 @@
                 ]
             },
             "designerId": "56672003-ec03-43d5-9ee3-db05ba96318d"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onRegisterTap",
+                "fn": "onRegisterTap",
+                "implHandler": [
+                    "this.getApplication().fireEvent('showview', this.getRegisterView());",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "loginview button[action=registerview]"
+            },
+            "designerId": "b7675b51-103a-4f7f-aadf-3ee78f3548d8"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "registerView",
+                "autoCreate": true,
+                "ref": "registerView",
+                "selector": "registerview",
+                "xtype": "registerview"
+            },
+            "designerId": "e6edc143-7c94-44af-bc99-d29e3199ab6c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onRegTap",
+                "fn": "onRegTap",
+                "implHandler": [
+                    "this.getLoginView().submit({",
+                    "    url: 'api/v1/users/create',",
+                    "    method: 'POST',",
+                    "    scope: this,",
+                    "    success: function(form, response){",
+                    "        Ext.Msg.alert('Registration Successful', 'Please log in.');",
+                    "    },",
+                    "    failure: function(form, response){",
+                    "        Ext.Msg.alert('Registration Failed', 'Please try again.');",
+                    "    }",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "registerview button[action=register]"
+            },
+            "designerId": "399d808b-d35b-45ba-80f5-ecb0204c567b"
         }
     ]
 }
