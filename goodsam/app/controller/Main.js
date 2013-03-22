@@ -108,8 +108,8 @@ Ext.define('RSS.controller.Main', {
     },
 
     onRegTap: function(button, e, options) {
-        this.getLoginView().submit({
-            url: 'api/v1/users/create',
+        this.getRegisterView().submit({
+            url: 'api/v1/users/new',
             method: 'POST',
             scope: this,
             success: function(form, response){

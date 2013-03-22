@@ -484,8 +484,8 @@
                 "designer|userClassName": "onRegTap",
                 "fn": "onRegTap",
                 "implHandler": [
-                    "this.getLoginView().submit({",
-                    "    url: 'api/v1/users/create',",
+                    "this.getRegisterView().submit({",
+                    "    url: 'api/v1/users/new',",
                     "    method: 'POST',",
                     "    scope: this,",
                     "    success: function(form, response){",

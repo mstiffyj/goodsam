@@ -80,7 +80,7 @@
                         "designer|userClassName": "MyTextField",
                         "designer|displayName": "First",
                         "label": "First",
-                        "name": "first",
+                        "name": "name",
                         "placeHolder": null
                     },
                     "designerId": "c468fdc2-8e89-4825-bf1e-d656758c3c58"
@@ -96,7 +96,7 @@
                         "designer|userClassName": "MyTextField",
                         "designer|displayName": "Last",
                         "label": "Last",
-                        "name": "last",
+                        "name": "surname",
                         "placeHolder": null
                     },
                     "designerId": "c6a6a91b-1add-4de0-a7da-d3b4419ef0e9"

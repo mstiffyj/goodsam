@@ -39,12 +39,12 @@ Ext.define('RSS.view.Register', {
                     {
                         xtype: 'textfield',
                         label: 'First',
-                        name: 'first'
+                        name: 'name'
                     },
                     {
                         xtype: 'textfield',
                         label: 'Last',
-                        name: 'last'
+                        name: 'surname'
                     },
                     {
                         xtype: 'textfield',

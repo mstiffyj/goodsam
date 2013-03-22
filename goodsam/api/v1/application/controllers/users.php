@@ -64,14 +64,18 @@ class Users extends REST_Controller {
     
     public function new_post(){
     
+		session_start();
+        $this->load->model('User');  
+          
         $user = $this->User->create(
             array(
                 "id" => null,
+                "name" => $this->post('name'),
+                "surname" => $this->post('surname'),
                 "username" => $this->post('username'),
-                "name" => $this->post('first'),
-                "surnmae" => $this->post('last'),
-                "email" => $this->post('email'),
-                "password" => $this->post('password')
+                "password" => $this->post('password'),
+                "email" => $this->post('email')
+
             )
         );
 
