@@ -14,24 +14,36 @@
  */
 
 Ext.define('RSS.view.Users', {
-    extend: 'Ext.dataview.List',
+    extend: 'Ext.dataview.DataView',
     alias: 'widget.usersview',
 
     config: {
+        id: 'view-container',
         store: 'Users',
-        onItemDisclosure: true,
         cls: [
             'users-view'
         ],
         itemTpl: [
-            '<div class="name">',
+            '<div class="pWrap">',
+            '    <div class="pTitle">Username</div>',
+            '    <div class="pinfo"><input class="x-type" type="text" value="{username}"></div>',
+            '</div>',
             '',
-            '    <div class="profileTitle"><div class="strong">Username:</div> <div class="info">{username}</div></div>',
-            '    <div class="profileTitle"><div class="strong">Name:</div><div class="info">{name}</div></div>',
-            '    <div class="profileTitle"><div class="strong">Email:</div><div class="info">{email}</div></div>',
-            '        ',
+            '<div class="pWrap">',
+            '    <div class="pTitle">First</div>',
+            '    <div class="pinfo"><input type="text" value="{name}"></div>',
+            '</div>',
             '',
-            '</div>'
+            '<div class="pWrap">',
+            '    <div class="pTitle">Last</div>',
+            '    <div class="pinfo"><input type="text" value="{surname}"></div>',
+            '</div>',
+            '',
+            '<div class="pWrap">',
+            '    <div class="pTitle">Email</div>',
+            '    <div class="pinfo"><input type="text" value="{email}"></div>',
+            '</div>',
+            ''
         ]
     }
 

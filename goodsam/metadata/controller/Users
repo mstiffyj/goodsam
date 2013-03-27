@@ -65,6 +65,61 @@
                 "scope": "this"
             },
             "designerId": "25682a97-15ae-4330-8d40-459fbe400445"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "friendsView",
+                "autoCreate": true,
+                "ref": "friendsView",
+                "selector": "friendsview",
+                "xtype": "friendsview"
+            },
+            "designerId": "86db1c45-0489-4365-b6a3-87686ae20a02"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onFriendsTap",
+                "fn": "onFriendsTap",
+                "implHandler": [
+                    "this.getApplication().fireEvent('showfriends');",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button[action=friends]"
+            },
+            "designerId": "4e6b4edd-4d8e-4abb-82f9-896706058657"
+        },
+        {
+            "type": "applicationaction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onShowfriends",
+                "fn": "onShowfriends",
+                "implHandler": [
+                    "this.getApplication().fireEvent('showview', this.getFriendsView());",
+                    "Ext.getStore('Friends').load();"
+                ],
+                "name": "showfriends",
+                "scope": "this"
+            },
+            "designerId": "7314f1e9-6247-4f1e-b045-368e524b481e"
         }
     ]
 }

@@ -22,12 +22,20 @@ Ext.define('RSS.controller.Users', {
                 autoCreate: true,
                 selector: 'usersview',
                 xtype: 'usersview'
+            },
+            friendsView: {
+                autoCreate: true,
+                selector: 'friendsview',
+                xtype: 'friendsview'
             }
         },
 
         control: {
             "button[action=users]": {
                 tap: 'onUsersTap'
+            },
+            "button[action=friends]": {
+                tap: 'onFriendsTap'
             }
         }
     },
@@ -37,15 +45,26 @@ Ext.define('RSS.controller.Users', {
 
     },
 
+    onFriendsTap: function(button, e, options) {
+        this.getApplication().fireEvent('showfriends');
+
+    },
+
     onShowusers: function() {
         this.getApplication().fireEvent('showview', this.getUsersView());
         Ext.getStore('Users').load();
     },
 
+    onShowfriends: function() {
+        this.getApplication().fireEvent('showview', this.getFriendsView());
+        Ext.getStore('Friends').load();
+    },
+
     init: function(application) {
 
         application.on([
-        { event: 'showusers', fn: this.onShowusers, scope: this }
+        { event: 'showusers', fn: this.onShowusers, scope: this },
+        { event: 'showfriends', fn: this.onShowfriends, scope: this }
         ]);
     }
 

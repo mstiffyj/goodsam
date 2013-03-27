@@ -12,6 +12,43 @@ class Users extends REST_Controller {
         
         session_start();
         $this->load->model('User');
+        $user = $this->User->login($this->post('username'), md5($this->post('password')));
+        
+        // Check if the user has been found
+        if($user){
+            
+            /* Storing user within
+              * A session variable. */
+            $_SESSION['user'] = $user;
+            
+            //Authentication successful
+            $this->response(
+                array(
+                    "success" => "true",
+                    "user" => $user
+                ), 
+                200
+            );
+    
+        }
+        else {
+            
+            // authentication failed
+            $this->response(
+                array(
+                    "success" => "false"
+                ), 
+                401
+            );
+            
+        }
+
+    }
+    
+    public function relogin_post(){
+        
+        session_start();
+        $this->load->model('User');
         $user = $this->User->login($this->post('username'), $this->post('password'));
         
         // Check if the user has been found
@@ -44,6 +81,7 @@ class Users extends REST_Controller {
         }
 
     }
+
         
     public function all_get(){
     
@@ -62,6 +100,24 @@ class Users extends REST_Controller {
     
     }
     
+     public function friends_get(){
+    
+        session_start();
+        $this->load->model('User');
+        $feeds = $this->User->friends($_SESSION['user']->id);
+
+        $this->response(
+            array(
+                "success" => "true",
+                "total" => count($feeds),
+                "data" => $feeds
+            ), 
+            200
+        );
+    
+    }
+
+    
     public function new_post(){
     
 		session_start();
@@ -74,7 +130,8 @@ class Users extends REST_Controller {
                 "surname" => $this->post('surname'),
                 "username" => $this->post('username'),
                 "password" => $this->post('password'),
-                "email" => $this->post('email')
+                "email" => $this->post('email'),
+                "date"=> $this->post('date')
 
             )
         );

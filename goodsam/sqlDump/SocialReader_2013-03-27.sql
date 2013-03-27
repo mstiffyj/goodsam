@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.25)
 # Database: SocialReader
-# Generation Time: 2013-03-21 04:37:36 +0000
+# Generation Time: 2013-03-27 17:32:07 +0000
 # ************************************************************
 
 
@@ -33,7 +33,7 @@ CREATE TABLE `feeds` (
   PRIMARY KEY (`id`),
   KEY `fk_feeds_users` (`user_id`),
   CONSTRAINT `fk_feeds_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 LOCK TABLES `feeds` WRITE;
 /*!40000 ALTER TABLE `feeds` DISABLE KEYS */;
@@ -61,21 +61,23 @@ CREATE TABLE `users` (
   `name` varchar(30) COLLATE latin1_general_ci NOT NULL,
   `surname` varchar(45) COLLATE latin1_general_ci DEFAULT NULL,
   `username` varchar(20) COLLATE latin1_general_ci NOT NULL,
-  `password` varchar(20) COLLATE latin1_general_ci NOT NULL,
+  `password` varchar(32) COLLATE latin1_general_ci NOT NULL DEFAULT '',
   `email` varchar(60) COLLATE latin1_general_ci NOT NULL,
+  `date` varchar(32) COLLATE latin1_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email_UNIQUE` (`email`),
   UNIQUE KEY `username_UNIQUE` (`username`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 
-INSERT INTO `users` (`id`, `name`, `surname`, `username`, `password`, `email`)
+INSERT INTO `users` (`id`, `name`, `surname`, `username`, `password`, `email`, `date`)
 VALUES
-	(1,'Andrea','Cammarata','andrea','1234','andrea.cammarata@sencha.com'),
-	(2,'Daniel','Gallo','daniel','1234','daniel.gallo@sencha.com'),
-	(3,'Demo','Demo','demo','1234','demo@demo.com');
+	(1,'Andrea','Cammarata','andrea','81dc9bdb52d04dc20036dbd8313ed055','andrea.cammarata@sencha.com',NULL),
+	(2,'Daniel','Gallo','daniel','81dc9bdb52d04dc20036dbd8313ed055','daniel.gallo@sencha.com',NULL),
+	(3,'Demo','Demo','demo','81dc9bdb52d04dc20036dbd8313ed055','demo@demo.com',NULL),
+	(71,'Tiffany','Small','tsmall','703d9edc2cb40d20417957982783bc84','tiffany.small@me.com','745');
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;

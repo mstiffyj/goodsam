@@ -42,10 +42,18 @@ class User extends CI_Model {
 
     }
     
+    public function friends($id){
+	
+		$sql = "SELECT * FROM users WHERE id != ?";
+		$users = $this->db->query($sql, array($id))->result();
+		return $users;
+
+    }
+    
     public function create($user){
 
-		$sql = "INSERT INTO users (id, name, surname, username, password, email)".
-	           " VALUES (?, ?, ?, ?, ?, ?)";
+		$sql = "INSERT INTO users (id, name, surname, username, password, email, date)".
+	           " VALUES (?, ?, ?, ?, MD5(?), ?, ?)";
 
 	    $success = $this->db->query($sql, $user);
 	    return $success ? $user : false;    

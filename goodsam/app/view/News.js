@@ -27,6 +27,12 @@ Ext.define('RSS.view.News', {
             '<b>{title}</b>',
             '<p class="content">{contentSnippet}</p>',
             ''
+        ],
+        plugins: [
+            {
+                xtype: 'component',
+                type: 'pullrefresh'
+            }
         ]
     }
 

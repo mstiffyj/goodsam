@@ -7,12 +7,15 @@
     "codeClass": null,
     "userConfig": {
         "title": null,
-        "designer|userClassName": "Login",
-        "designer|userAlias": "loginview",
-        "id": "view-container"
+        "designer|userClassName": "Contact",
+        "designer|userAlias": "contactview",
+        "cls": [
+            "contact-view"
+        ],
+        "id": null
     },
-    "id": "ExtBox1-ext-gen4414",
-    "designerId": "420d38d3-713e-452f-b01c-9d402f8e6c90",
+    "id": "ExtBox1-ext-gen4057",
+    "designerId": "8b639bfd-ab6f-4b04-bae7-8b32fbfe3b87",
     "customConfigs": [
         {
             "group": "(Custom Properties)",
@@ -29,11 +32,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyFieldSet",
-                "instructions": null,
-                "title": ""
+                "designer|userClassName": "MyFieldSet6",
+                "title": "Contact"
             },
-            "designerId": "59d7afdb-f0a5-44c5-9f8d-9e93fe095a7a",
+            "designerId": "80ff6cfb-928f-4adf-bc39-0cffa7ed70e5",
             "cn": [
                 {
                     "type": "textfield",
@@ -44,27 +46,41 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyTextField",
-                        "designer|displayName": "Username",
-                        "label": "Username",
-                        "name": "username",
+                        "designer|displayName": "Email",
+                        "label": "Email",
+                        "name": "email",
                         "placeHolder": null
                     },
-                    "designerId": "4eb6da10-499f-4243-81a1-0afe4461edf7"
-                },
+                    "designerId": "3265052c-1064-4f00-bddd-ccd502cf111a"
+                }
+            ]
+        },
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyFieldSet5",
+                "instructions": null,
+                "title": null
+            },
+            "designerId": "58cbbb3e-3910-4c67-9ede-739ad7902eaa",
+            "cn": [
                 {
-                    "type": "passwordfield",
+                    "type": "textareafield",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyPasswordField",
-                        "designer|displayName": "Password",
-                        "label": "Password",
-                        "name": "password"
+                        "designer|userClassName": "MyTextArea",
+                        "label": null
                     },
-                    "designerId": "49837cab-c545-48eb-a56e-c1ba39f4659e"
+                    "designerId": "9febfdf1-cb6e-4c57-9f65-adf56a9198c7"
                 }
             ]
         },
@@ -76,37 +92,14 @@
             },
             "codeClass": null,
             "userConfig": {
-                "action": "login",
-                "designer|userClassName": "MyButton",
-                "height": 50,
-                "ui": "action",
-                "text": "Login"
-            },
-            "designerId": "9bcd34b6-21fb-4e8e-be73-9b26586c21ab",
-            "customConfigs": [
-                {
-                    "group": "(Custom Properties)",
-                    "name": "action",
-                    "type": "string"
-                }
-            ]
-        },
-        {
-            "type": "button",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "action": "registerview",
+                "action": "contact",
                 "designer|userClassName": "MyButton",
                 "height": 50,
                 "margin": "1em 0 0 0",
-                "ui": "confirm",
-                "text": "Register"
+                "ui": "action",
+                "text": "Contact"
             },
-            "designerId": "122f2676-7199-4eb8-82ca-dfbd4180bebe",
+            "designerId": "54fe8e18-7e65-4ec1-bedb-16dcc57f9e43",
             "customConfigs": [
                 {
                     "group": "(Custom Properties)",
@@ -114,6 +107,21 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": null,
+                "designer|userClassName": "MyFieldSet",
+                "instructions": "© 2013",
+                "title": null
+            },
+            "designerId": "f1304b09-0e7c-4e2f-a2b8-ffcb88e7b3ae"
         }
     ]
 }

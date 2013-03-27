@@ -10,13 +10,15 @@
             "Feed",
             "News",
             "Instagram",
-            "User"
+            "User",
+            "Friends"
         ],
         "stores": [
             "Feeds",
             "News",
             "Data",
-            "Users"
+            "Users",
+            "Friends"
         ],
         "views": [
             "Main",
@@ -27,8 +29,10 @@
             "FeedEdit",
             "Viewport",
             "Timeline",
-            "Users",
-            "Register"
+            "Register",
+            "Contact",
+            "Friends",
+            "Users"
         ],
         "name": "RSS",
         "controllers": [

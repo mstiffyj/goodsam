@@ -69,6 +69,20 @@
             },
             "designerId": "7efca6e0-333d-46db-8a5f-3f780ae2a0bb",
             "masterInstanceId": "ExtBox1-ext-gen2633"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Info",
+                "iconCls": "info"
+            },
+            "designerId": "369e1cdc-1134-4539-bf6f-b21309c77758",
+            "masterInstanceId": "ExtBox1-ext-gen4057"
         }
     ]
 }

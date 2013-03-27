@@ -155,14 +155,6 @@
             ],
             "className": "Instagram"
         },
-        "afeb0076-5495-4692-a697-ba2bebf8b24a": {
-            "paths": [
-                "metadata/view/Users",
-                "app/view/override/Users.js",
-                "app/view/Users.js"
-            ],
-            "className": "Users"
-        },
         "dd3b456b-2f76-47b0-8263-095bba350629": {
             "paths": [
                 "metadata/store/Users",
@@ -194,23 +186,66 @@
                 "app/view/Register.js"
             ],
             "className": "Register"
+        },
+        "8b639bfd-ab6f-4b04-bae7-8b32fbfe3b87": {
+            "paths": [
+                "metadata/view/Contact",
+                "app/view/override/Contact.js",
+                "app/view/Contact.js"
+            ],
+            "className": "Contact"
+        },
+        "0790718e-6c82-4b2a-8685-1b564e44b5e7": {
+            "paths": [
+                "metadata/view/Friends",
+                "app/view/override/Friends.js",
+                "app/view/Friends.js"
+            ],
+            "className": "Friends"
+        },
+        "835ab547-dcf5-4bbf-b243-7cbdfbf914a1": {
+            "paths": [
+                "metadata/store/Friends",
+                "app/store/override/Friends.js",
+                "app/store/Friends.js"
+            ],
+            "className": "Friends"
+        },
+        "4d843ec4-475c-45ce-9a6e-951251edf60d": {
+            "paths": [
+                "metadata/model/Friends",
+                "app/model/override/Friends.js",
+                "app/model/Friends.js"
+            ],
+            "className": "Friends"
+        },
+        "ad2e27eb-4de2-4a23-a5aa-ff4181f9e14b": {
+            "paths": [
+                "metadata/view/Users",
+                "app/view/override/Users.js",
+                "app/view/Users.js"
+            ],
+            "className": "Users"
         }
     },
     "viewOrderMap": {
         "view": [
-            "afeb0076-5495-4692-a697-ba2bebf8b24a",
+            "0790718e-6c82-4b2a-8685-1b564e44b5e7",
             "a51b7ec1-d7d6-4e48-a6ea-cc2671585207",
             "420d38d3-713e-452f-b01c-9d402f8e6c90",
             "2c3c1857-de7c-4ce3-99cd-249288dfc0d8",
+            "8b639bfd-ab6f-4b04-bae7-8b32fbfe3b87",
             "dd877428-85f4-4116-b7c4-2d076e952334",
             "07be9c33-4fba-4cc2-a59b-feaa09968475",
             "8377bb3b-9576-4f3b-b36c-c473cd2a5d1d",
             "0c72b429-03d4-4378-b84f-6c4e9cc8d04f",
             "3ded5ea1-071f-4c80-b4af-6b53e02078ef",
-            "be25f754-4122-421c-9e7c-6662f3e51ab0"
+            "be25f754-4122-421c-9e7c-6662f3e51ab0",
+            "ad2e27eb-4de2-4a23-a5aa-ff4181f9e14b"
         ],
         "store": [
             "dd3b456b-2f76-47b0-8263-095bba350629",
+            "835ab547-dcf5-4bbf-b243-7cbdfbf914a1",
             "d2c6da0e-3a36-4e8e-a927-d3aa29233968",
             "a53720ea-1af4-4fca-b211-78a213dadfbe",
             "5a739720-7d23-4271-8282-8a3e491e51a7"
@@ -222,6 +257,7 @@
         ],
         "model": [
             "55c883fb-1717-4f9b-a1ab-8c9b2e52e5b3",
+            "4d843ec4-475c-45ce-9a6e-951251edf60d",
             "b8f12c9b-c8e4-4ea2-996d-e014c0383f5a",
             "936c1394-eefb-4fcc-bc22-e98d6906b554",
             "ceb12bfa-5122-471c-bd11-db2d8f94013f"

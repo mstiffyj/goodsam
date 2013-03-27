@@ -19,7 +19,8 @@ Ext.define('RSS.view.Viewport', {
 
     requires: [
         'RSS.view.Main',
-        'RSS.view.Timeline'
+        'RSS.view.Timeline',
+        'RSS.view.Contact'
     ],
 
     config: {
@@ -43,6 +44,11 @@ Ext.define('RSS.view.Viewport', {
                 xtype: 'timelineview',
                 title: 'Timeline',
                 iconCls: 'time'
+            },
+            {
+                xtype: 'contactview',
+                title: 'Info',
+                iconCls: 'info'
             }
         ]
     }

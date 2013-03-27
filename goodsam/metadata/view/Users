@@ -1,29 +1,21 @@
 {
-    "type": "list",
+    "type": "dataview",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "title": null,
         "designer|userClassName": "Users",
         "designer|userAlias": "usersview",
         "cls": [
             "users-view"
         ],
-        "store": "Users",
-        "onItemDisclosure": true
+        "id": "view-container",
+        "store": "Users"
     },
-    "id": "ExtBox1-ext-gen8353",
-    "designerId": "afeb0076-5495-4692-a697-ba2bebf8b24a",
-    "customConfigs": [
-        {
-            "group": "(Custom Properties)",
-            "name": "title",
-            "type": "string"
-        }
-    ],
+    "id": "ExtBox1-ext-gen36368",
+    "designerId": "ad2e27eb-4de2-4a23-a5aa-ff4181f9e14b",
     "cn": [
         {
             "type": "template",
@@ -35,18 +27,30 @@
             "userConfig": {
                 "designer|userClassName": "itemTpl",
                 "implHandler": [
-                    "<div class=\"name\">",
+                    "<div class=\"pWrap\">",
+                    "    <div class=\"pTitle\">Username</div>",
+                    "    <div class=\"pinfo\"><input class=\"x-type\" type=\"text\" value=\"{username}\"></div>",
+                    "</div>",
                     "",
-                    "    <div class=\"profileTitle\"><div class=\"strong\">Username:</div> <div class=\"info\">{username}</div></div>",
-                    "    <div class=\"profileTitle\"><div class=\"strong\">Name:</div><div class=\"info\">{name}</div></div>",
-                    "    <div class=\"profileTitle\"><div class=\"strong\">Email:</div><div class=\"info\">{email}</div></div>",
-                    "        ",
+                    "<div class=\"pWrap\">",
+                    "    <div class=\"pTitle\">First</div>",
+                    "    <div class=\"pinfo\"><input type=\"text\" value=\"{name}\"></div>",
+                    "</div>",
                     "",
-                    "</div>"
+                    "<div class=\"pWrap\">",
+                    "    <div class=\"pTitle\">Last</div>",
+                    "    <div class=\"pinfo\"><input type=\"text\" value=\"{surname}\"></div>",
+                    "</div>",
+                    "",
+                    "<div class=\"pWrap\">",
+                    "    <div class=\"pTitle\">Email</div>",
+                    "    <div class=\"pinfo\"><input type=\"text\" value=\"{email}\"></div>",
+                    "</div>",
+                    ""
                 ],
                 "designer|displayName": "itemTpl"
             },
-            "designerId": "63837390-6865-4537-a354-92909273e19b"
+            "designerId": "cc7fa787-ea65-4bb8-a2af-552eb19a5345"
         }
     ]
 }

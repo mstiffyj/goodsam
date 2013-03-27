@@ -35,7 +35,8 @@ Ext.define('RSS.controller.Main', {
                 autoCreate: true,
                 selector: 'registerview',
                 xtype: 'registerview'
-            }
+            },
+            friendsButton: 'button[action=friends]'
         },
 
         control: {
@@ -68,27 +69,33 @@ Ext.define('RSS.controller.Main', {
             },
             failure: function(form, response){
                 Ext.Msg.alert('Login Failed', 'Please try again.');
+
+
             }
         });
     },
 
     onNavigationviewPush: function(navigationView, view, options) {
         if(view instanceof RSS.view.News || 
-        view instanceof RSS.view.FeedEdit){
+        view instanceof RSS.view.FeedEdit || 
+        view instanceof RSS.view.Users || 
+        view instanceof RSS.view.Friends){
             this.hideLogoutButton();
             this.hideNewFeedButton();
             this.hideUsersButton();
-
+            this.hideFriendsButton();
         }
     },
 
     onNavigationviewPop: function(navigationView, view, options) {
         if(view instanceof RSS.view.News ||
-        view instanceof RSS.view.FeedEdit){
+        view instanceof RSS.view.FeedEdit || 
+        view instanceof RSS.view.Users || 
+        view instanceof RSS.view.Friends){
             this.showLogoutButton();
             this.showNewFeedButton();
             this.showUsersButton();
-
+            this.showFriendsButton();
         }
     },
 
@@ -142,7 +149,7 @@ Ext.define('RSS.controller.Main', {
 
     silentlogin: function(user) {
         Ext.Ajax.request({
-            url: 'api/v1/users/login',
+            url: 'api/v1/users/relogin',
             method: 'POST',
             params: {
                 username: user.username,
@@ -154,6 +161,11 @@ Ext.define('RSS.controller.Main', {
             },
             failure: function(response){
                 Ext.Msg.alert('Login Failed', 'Please try again.');
+                console.log(localStorage.user);
+
+                delete window.localStorage.user;
+                window.location.reload();
+
 
             }
         });
@@ -165,6 +177,7 @@ Ext.define('RSS.controller.Main', {
         this.showLogoutButton();
         this.showNewFeedButton();
         this.showUsersButton();
+        this.showFriendsButton();
     },
 
     showLogoutButton: function() {
@@ -221,6 +234,26 @@ Ext.define('RSS.controller.Main', {
 
     hideUsersButton: function() {
         this.getUsersButton().destroy(true);
+    },
+
+    showFriendsButton: function() {
+        this.getMainView().getNavigationBar().add({
+            xtype: 'button',
+            action: 'friends',
+            ui: 'action',
+            iconMask: true,
+            iconCls: 'team',
+            align: 'right'
+        });
+
+        this.getUsersButton ().show({
+            type: 'pop'
+        });
+    },
+
+    hideFriendsButton: function() {
+        this.getFriendsButton().destroy(true);
+
     },
 
     init: function(application) {

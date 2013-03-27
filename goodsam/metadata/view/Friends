@@ -7,16 +7,16 @@
     "codeClass": null,
     "userConfig": {
         "title": null,
-        "designer|userClassName": "Feeds",
-        "designer|userAlias": "feedsview",
+        "designer|userClassName": "Friends",
+        "designer|userAlias": "friendsview",
         "cls": [
-            "feeds-view"
+            "friends-view"
         ],
-        "store": "Feeds",
+        "store": "Friends",
         "onItemDisclosure": true
     },
-    "id": "ExtBox1-ext-gen10281",
-    "designerId": "dd877428-85f4-4116-b7c4-2d076e952334",
+    "id": "ExtBox1-ext-gen14602",
+    "designerId": "0790718e-6c82-4b2a-8685-1b564e44b5e7",
     "customConfigs": [
         {
             "group": "(Custom Properties)",
@@ -35,23 +35,15 @@
             "userConfig": {
                 "designer|userClassName": "itemTpl",
                 "implHandler": [
-                    "<div class=\"name\">{name}</div>"
+                    "<div class=\"name\">",
+                    "",
+                    "    <div class=\"profileTitle\"><div class=\"strong\">{username}</div></div>",
+                    "    ",
+                    "</div>"
                 ],
                 "designer|displayName": "itemTpl"
             },
-            "designerId": "0f889b71-211e-4560-9b0d-ff56953ef097"
-        },
-        {
-            "type": "pullrefresh",
-            "reference": {
-                "name": "plugins",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyPullRefreshPlugin"
-            },
-            "designerId": "26bad92b-1ae3-4f0d-b3f2-92a08d5ce6cc"
+            "designerId": "568a9dc0-b218-4335-b8b0-aa52de10e35f"
         }
     ]
 }

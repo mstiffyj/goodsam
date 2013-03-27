@@ -120,7 +120,7 @@
                 ],
                 "implHandler": [
                     "Ext.Ajax.request({",
-                    "    url: 'api/v1/users/login',",
+                    "    url: 'api/v1/users/relogin',",
                     "    method: 'POST',",
                     "    params: {",
                     "        username: user.username,",
@@ -132,6 +132,11 @@
                     "    },",
                     "    failure: function(response){",
                     "        Ext.Msg.alert('Login Failed', 'Please try again.');",
+                    "        console.log(localStorage.user);",
+                    "        ",
+                    "        delete window.localStorage.user;",
+                    "        window.location.reload();",
+                    "        ",
                     "",
                     "    }",
                     "});"
@@ -158,7 +163,9 @@
                     "        this.loginComplete (response.user);",
                     "    },",
                     "    failure: function(form, response){",
-                    "        Ext.Msg.alert('Login Failed', 'Please try again.');",
+                    "         Ext.Msg.alert('Login Failed', 'Please try again.');",
+                    "",
+                    "",
                     "    }",
                     "});"
                 ],
@@ -186,7 +193,8 @@
                     "this.getApplication().fireEvent('showfeeds');",
                     "this.showLogoutButton();",
                     "this.showNewFeedButton();",
-                    "this.showUsersButton();"
+                    "this.showUsersButton();",
+                    "this.showFriendsButton();"
                 ]
             },
             "designerId": "95cb66a6-4ec3-4d29-8d9e-6890acb54707"
@@ -302,11 +310,13 @@
                 "fn": "onNavigationviewPush",
                 "implHandler": [
                     "if(view instanceof RSS.view.News || ",
-                    "view instanceof RSS.view.FeedEdit){",
+                    "view instanceof RSS.view.FeedEdit || ",
+                    "view instanceof RSS.view.Users || ",
+                    "view instanceof RSS.view.Friends){",
                     "    this.hideLogoutButton();",
                     "    this.hideNewFeedButton();",
                     "    this.hideUsersButton();",
-                    "",
+                    "    this.hideFriendsButton();",
                     "}"
                 ],
                 "name": "push",
@@ -327,11 +337,13 @@
                 "fn": "onNavigationviewPop",
                 "implHandler": [
                     "if(view instanceof RSS.view.News ||",
-                    "view instanceof RSS.view.FeedEdit){",
+                    "view instanceof RSS.view.FeedEdit || ",
+                    "view instanceof RSS.view.Users || ",
+                    "view instanceof RSS.view.Friends){",
                     "    this.showLogoutButton();",
                     "    this.showNewFeedButton();",
                     "    this.showUsersButton();",
-                    "",
+                    "    this.showFriendsButton();",
                     "}"
                 ],
                 "name": "pop",
@@ -501,6 +513,64 @@
                 "designer|controlQuery": "registerview button[action=register]"
             },
             "designerId": "399d808b-d35b-45ba-80f5-ecb0204c567b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "friendsButton",
+                "ref": "friendsButton",
+                "selector": "button[action=friends]"
+            },
+            "designerId": "c9f66010-0d72-49c9-9740-56c31847f9ba"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "showFriendsButton",
+                "fn": "showFriendsButton",
+                "implHandler": [
+                    "this.getMainView().getNavigationBar().add({",
+                    "    xtype: 'button',",
+                    "    action: 'friends',",
+                    "    ui: 'action',",
+                    "    iconMask: true,",
+                    "    iconCls: 'team',",
+                    "    align: 'right'",
+                    "});",
+                    "",
+                    "this.getUsersButton ().show({",
+                    "    type: 'pop'",
+                    "});"
+                ]
+            },
+            "designerId": "4e4b7206-a85b-47b4-83b0-24685609ba30"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "hideFriendsButton",
+                "fn": "hideFriendsButton",
+                "implHandler": [
+                    "this.getFriendsButton().destroy(true);",
+                    ""
+                ]
+            },
+            "designerId": "097e0370-312e-43e3-bae5-0168f620ac2f"
         }
     ]
 }

@@ -50,6 +50,11 @@ Ext.define('RSS.view.Register', {
                         xtype: 'textfield',
                         label: 'Email',
                         name: 'email'
+                    },
+                    {
+                        xtype: 'hiddenfield',
+                        name: 'date',
+                        value: new Date().getUTCMilliseconds()
                     }
                 ]
             },

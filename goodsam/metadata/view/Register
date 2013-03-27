@@ -116,6 +116,23 @@
                         "placeHolder": null
                     },
                     "designerId": "af9bf70a-74a5-43ef-b215-00846e4e7569"
+                },
+                {
+                    "type": "hiddenfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyHiddenField1",
+                        "designer|displayName": "Date",
+                        "name": "date",
+                        "value": [
+                            "new Date().getUTCMilliseconds()"
+                        ]
+                    },
+                    "designerId": "db1562fb-2bd9-4b1d-a971-2121de399199"
                 }
             ]
         },
