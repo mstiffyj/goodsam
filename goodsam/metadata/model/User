@@ -103,6 +103,33 @@
                 ]
             },
             "designerId": "bbf078c8-1ef9-4ac0-bf98-840a732b526f"
+        },
+        {
+            "type": "emailvalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyEmailValidation",
+                "field": "email"
+            },
+            "designerId": "f7c79eca-2fdc-4ac6-95be-71de6406558c"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPresenceValidation2",
+                "designer|displayName": "usernameValidation",
+                "field": "username"
+            },
+            "designerId": "7a5984de-13bd-4dc9-b294-0309ca2814b6"
         }
     ]
 }

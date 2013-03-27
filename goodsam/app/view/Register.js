@@ -18,53 +18,74 @@ Ext.define('RSS.view.Register', {
     alias: 'widget.registerview',
 
     config: {
+        layout: {
+            type: 'fit'
+        },
         cls: [
             'register-view'
         ],
         items: [
             {
-                xtype: 'fieldset',
-                title: '',
+                xtype: 'formpanel',
                 items: [
                     {
-                        xtype: 'textfield',
-                        label: 'Username',
-                        name: 'username'
+                        xtype: 'fieldset',
+                        layout: {
+                            type: 'default'
+                        },
+                        title: '',
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                label: 'Username',
+                                name: 'username',
+                                required: true
+                            },
+                            {
+                                xtype: 'passwordfield',
+                                label: 'Password',
+                                name: 'password',
+                                required: true
+                            },
+                            {
+                                xtype: 'textfield',
+                                label: 'First',
+                                name: 'name'
+                            },
+                            {
+                                xtype: 'textfield',
+                                label: 'Last',
+                                name: 'surname'
+                            },
+                            {
+                                xtype: 'textfield',
+                                label: 'Email',
+                                name: 'email',
+                                required: true
+                            },
+                            {
+                                xtype: 'hiddenfield',
+                                name: 'date',
+                                value: new Date().getUTCMilliseconds()
+                            },
+                            {
+                                xtype: 'checkboxfield',
+                                label: 'Newsletter',
+                                name: 'newsletter',
+                                value: 'Yes',
+                                checked: true
+                            }
+                        ]
                     },
                     {
-                        xtype: 'passwordfield',
-                        label: 'Password',
-                        name: 'password'
-                    },
-                    {
-                        xtype: 'textfield',
-                        label: 'First',
-                        name: 'name'
-                    },
-                    {
-                        xtype: 'textfield',
-                        label: 'Last',
-                        name: 'surname'
-                    },
-                    {
-                        xtype: 'textfield',
-                        label: 'Email',
-                        name: 'email'
-                    },
-                    {
-                        xtype: 'hiddenfield',
-                        name: 'date',
-                        value: new Date().getUTCMilliseconds()
+                        xtype: 'button',
+                        action: 'register',
+                        height: 50,
+                        margin: '1em 0 0 0',
+                        ui: 'action',
+                        text: 'Register'
                     }
                 ]
-            },
-            {
-                xtype: 'button',
-                action: 'register',
-                height: 50,
-                margin: '1em 0 0 0',
-                ui: 'action',
-                text: 'Register'
             }
         ]
     }

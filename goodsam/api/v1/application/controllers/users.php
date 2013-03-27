@@ -131,7 +131,8 @@ class Users extends REST_Controller {
                 "username" => $this->post('username'),
                 "password" => $this->post('password'),
                 "email" => $this->post('email'),
-                "date"=> $this->post('date')
+                "date"=> $this->post('date'),
+                "newsletter"=> $this->post('newsletter')
 
             )
         );

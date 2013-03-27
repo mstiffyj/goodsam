@@ -12,7 +12,8 @@
         "cls": [
             "register-view"
         ],
-        "id": null
+        "id": null,
+        "layout": "fit"
     },
     "id": "ExtBox1-ext-gen28601",
     "designerId": "2c3c1857-de7c-4ce3-99cd-249288dfc0d8",
@@ -25,138 +26,173 @@
     ],
     "cn": [
         {
-            "type": "fieldset",
+            "type": "formpanel",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyFieldSet",
-                "instructions": null,
-                "title": ""
+                "designer|userClassName": "MyFormPanel4"
             },
-            "designerId": "660a34e2-817b-4a96-af3a-5fc30c3e5f5a",
+            "designerId": "4e755788-e64b-410c-a6d3-c55034e53773",
             "cn": [
                 {
-                    "type": "textfield",
+                    "type": "fieldset",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyTextField",
-                        "designer|displayName": "Username",
-                        "label": "Username",
-                        "name": "username",
-                        "placeHolder": null
+                        "designer|userClassName": "MyFieldSet",
+                        "layout": "default",
+                        "instructions": null,
+                        "title": ""
                     },
-                    "designerId": "ef28c10e-2f8f-4926-8449-127ee2773ba9"
+                    "designerId": "660a34e2-817b-4a96-af3a-5fc30c3e5f5a",
+                    "cn": [
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField",
+                                "designer|displayName": "Username",
+                                "label": "Username",
+                                "name": "username",
+                                "required": true,
+                                "placeHolder": null
+                            },
+                            "designerId": "ef28c10e-2f8f-4926-8449-127ee2773ba9"
+                        },
+                        {
+                            "type": "passwordfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyPasswordField",
+                                "designer|displayName": "Password",
+                                "label": "Password",
+                                "name": "password",
+                                "required": true
+                            },
+                            "designerId": "10346618-9ff6-466b-a0b2-99d9552835b0"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField",
+                                "designer|displayName": "First",
+                                "label": "First",
+                                "name": "name",
+                                "placeHolder": null
+                            },
+                            "designerId": "c468fdc2-8e89-4825-bf1e-d656758c3c58"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField",
+                                "designer|displayName": "Last",
+                                "label": "Last",
+                                "name": "surname",
+                                "placeHolder": null
+                            },
+                            "designerId": "c6a6a91b-1add-4de0-a7da-d3b4419ef0e9"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField",
+                                "designer|displayName": "Email",
+                                "label": "Email",
+                                "name": "email",
+                                "required": true,
+                                "placeHolder": null
+                            },
+                            "designerId": "af9bf70a-74a5-43ef-b215-00846e4e7569"
+                        },
+                        {
+                            "type": "hiddenfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyHiddenField1",
+                                "designer|displayName": "Date",
+                                "name": "date",
+                                "value": [
+                                    "new Date().getUTCMilliseconds()"
+                                ]
+                            },
+                            "designerId": "db1562fb-2bd9-4b1d-a971-2121de399199"
+                        },
+                        {
+                            "type": "checkboxfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyCheckbox",
+                                "docked": null,
+                                "label": "Newsletter",
+                                "name": "newsletter",
+                                "value": "Yes",
+                                "checked": true
+                            },
+                            "designerId": "5efb7aa6-ec34-4a27-bcba-1b0a0d030363"
+                        }
+                    ]
                 },
                 {
-                    "type": "passwordfield",
+                    "type": "button",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyPasswordField",
-                        "designer|displayName": "Password",
-                        "label": "Password",
-                        "name": "password"
+                        "action": "register",
+                        "designer|userClassName": "MyButton",
+                        "height": 50,
+                        "margin": "1em 0 0 0",
+                        "ui": "action",
+                        "text": "Register"
                     },
-                    "designerId": "10346618-9ff6-466b-a0b2-99d9552835b0"
-                },
-                {
-                    "type": "textfield",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyTextField",
-                        "designer|displayName": "First",
-                        "label": "First",
-                        "name": "name",
-                        "placeHolder": null
-                    },
-                    "designerId": "c468fdc2-8e89-4825-bf1e-d656758c3c58"
-                },
-                {
-                    "type": "textfield",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyTextField",
-                        "designer|displayName": "Last",
-                        "label": "Last",
-                        "name": "surname",
-                        "placeHolder": null
-                    },
-                    "designerId": "c6a6a91b-1add-4de0-a7da-d3b4419ef0e9"
-                },
-                {
-                    "type": "textfield",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyTextField",
-                        "designer|displayName": "Email",
-                        "label": "Email",
-                        "name": "email",
-                        "placeHolder": null
-                    },
-                    "designerId": "af9bf70a-74a5-43ef-b215-00846e4e7569"
-                },
-                {
-                    "type": "hiddenfield",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyHiddenField1",
-                        "designer|displayName": "Date",
-                        "name": "date",
-                        "value": [
-                            "new Date().getUTCMilliseconds()"
-                        ]
-                    },
-                    "designerId": "db1562fb-2bd9-4b1d-a971-2121de399199"
-                }
-            ]
-        },
-        {
-            "type": "button",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "action": "register",
-                "designer|userClassName": "MyButton",
-                "height": 50,
-                "margin": "1em 0 0 0",
-                "ui": "action",
-                "text": "Register"
-            },
-            "designerId": "6f671433-b394-488a-9bf4-c025a2377282",
-            "customConfigs": [
-                {
-                    "group": "(Custom Properties)",
-                    "name": "action",
-                    "type": "string"
+                    "designerId": "6f671433-b394-488a-9bf4-c025a2377282",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
                 }
             ]
         }

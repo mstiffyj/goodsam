@@ -115,17 +115,38 @@ Ext.define('RSS.controller.Main', {
     },
 
     onRegTap: function(button, e, options) {
-        this.getRegisterView().submit({
-            url: 'api/v1/users/new',
-            method: 'POST',
-            scope: this,
-            success: function(form, response){
-                Ext.Msg.alert('Registration Successful', 'Please log in.');
-            },
-            failure: function(form, response){
-                Ext.Msg.alert('Registration Failed', 'Please try again.');
-            }
-        });
+        var me = this,
+            view = me.getRegisterView(),
+            form = view.down('formpanel'),
+            values = form.getValues(),
+            user = form.getRecord() || Ext.create('RSS.model.User'),
+            errors;
+
+        user.setData(values);
+
+        errors = user.validate();
+
+        if(!errors.length){
+
+            this.getRegisterView().submit({
+                url: 'api/v1/users/new',
+                method: 'POST',
+                scope: this,
+                success: function(form, response){
+                    Ext.Msg.alert('Registration Successful', 'Please log in.');
+                },
+                failure: function(form, response){
+                    Ext.Msg.alert('Registration Failed', 'Please try again.');
+                }
+            });
+
+        }
+        else{
+
+            error = errors.first();
+            Ext.Msg.alert('Invalid Entry', Ext.String.format('Error "{0}":<br/>{1}.', error.getField(), error.getMessage()));
+
+        }
     },
 
     showView: function(view) {

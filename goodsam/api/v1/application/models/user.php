@@ -52,8 +52,8 @@ class User extends CI_Model {
     
     public function create($user){
 
-		$sql = "INSERT INTO users (id, name, surname, username, password, email, date)".
-	           " VALUES (?, ?, ?, ?, MD5(?), ?, ?)";
+		$sql = "INSERT INTO users (id, name, surname, username, password, email, date, newsletter)".
+	           " VALUES (?, ?, ?, ?, MD5(?), ?, ?, ?)";
 
 	    $success = $this->db->query($sql, $user);
 	    return $success ? $user : false;    

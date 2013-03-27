@@ -50,6 +50,16 @@ Ext.define('RSS.model.User', {
                 update: 'api/v1/users/update',
                 destroy: 'api/v1/users/remove'
             }
-        }
+        },
+        validations: [
+            {
+                type: 'email',
+                field: 'email'
+            },
+            {
+                type: 'presence',
+                field: 'username'
+            }
+        ]
     }
 });
