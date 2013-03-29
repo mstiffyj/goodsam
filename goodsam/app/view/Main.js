@@ -18,6 +18,7 @@ Ext.define('RSS.view.Main', {
     alias: 'widget.mainview',
 
     config: {
+        id: 'view_container',
         ui: 'dark'
     }
 

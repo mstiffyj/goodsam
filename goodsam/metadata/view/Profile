@@ -1,0 +1,57 @@
+{
+    "type": "list",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "title": null,
+        "designer|userClassName": "Profile",
+        "designer|userAlias": "profileview",
+        "cls": [
+            "profile-view"
+        ],
+        "store": "Users",
+        "onItemDisclosure": true
+    },
+    "id": "ExtBox1-ext-gen19066",
+    "designerId": "346d96af-9bcd-40ad-ab88-16fed5fe0bd4",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "title",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "template",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "<div class=\"name\">{name}</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "06c3ab67-9fad-42b7-b041-d8a67dc1d7c4"
+        },
+        {
+            "type": "pullrefresh",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPullRefreshPlugin"
+            },
+            "designerId": "13522b50-eb30-4018-bebd-8e04bdaff931"
+        }
+    ]
+}

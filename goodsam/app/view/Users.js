@@ -14,36 +14,74 @@
  */
 
 Ext.define('RSS.view.Users', {
-    extend: 'Ext.dataview.DataView',
+    extend: 'Ext.Container',
     alias: 'widget.usersview',
 
     config: {
-        id: 'view-container',
-        store: 'Users',
+        layout: {
+            type: 'fit'
+        },
         cls: [
             'users-view'
         ],
-        itemTpl: [
-            '<div class="pWrap">',
-            '    <div class="pTitle">Username</div>',
-            '    <div class="pinfo"><input class="x-type" type="text" value="{username}"></div>',
-            '</div>',
-            '',
-            '<div class="pWrap">',
-            '    <div class="pTitle">First</div>',
-            '    <div class="pinfo"><input type="text" value="{name}"></div>',
-            '</div>',
-            '',
-            '<div class="pWrap">',
-            '    <div class="pTitle">Last</div>',
-            '    <div class="pinfo"><input type="text" value="{surname}"></div>',
-            '</div>',
-            '',
-            '<div class="pWrap">',
-            '    <div class="pTitle">Email</div>',
-            '    <div class="pinfo"><input type="text" value="{email}"></div>',
-            '</div>',
-            ''
+        items: [
+            {
+                xtype: 'formpanel',
+                items: [
+                    {
+                        xtype: 'fieldset',
+                        title: '',
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                label: 'Username',
+                                name: 'username'
+                            },
+                            {
+                                xtype: 'textfield',
+                                label: 'First',
+                                name: 'name'
+                            },
+                            {
+                                xtype: 'textfield',
+                                label: 'Last',
+                                name: 'surname'
+                            },
+                            {
+                                xtype: 'textfield',
+                                label: 'Email',
+                                name: 'email'
+                            },
+                            {
+                                xtype: 'checkboxfield',
+                                label: 'Newsletter',
+                                name: 'newsletter',
+                                value: 'Yes'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'hiddenfield',
+                        name: 'id'
+                    },
+                    {
+                        xtype: 'button',
+                        action: 'save',
+                        height: 50,
+                        ui: 'action',
+                        text: 'Update'
+                    },
+                    {
+                        xtype: 'button',
+                        action: 'delete',
+                        height: 50,
+                        hidden: true,
+                        style: 'margin-top: 10px;',
+                        ui: 'decline',
+                        text: 'Delete Account'
+                    }
+                ]
+            }
         ]
     }
 

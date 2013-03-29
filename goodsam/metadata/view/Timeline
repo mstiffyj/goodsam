@@ -12,6 +12,7 @@
             "timeline-view"
         ],
         "id": "timeline",
+        "ui": "",
         "store": "data"
     },
     "id": "ExtBox1-ext-gen2633",

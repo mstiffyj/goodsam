@@ -219,13 +219,21 @@
             ],
             "className": "Friends"
         },
-        "ad2e27eb-4de2-4a23-a5aa-ff4181f9e14b": {
+        "144a6776-c32f-4bd6-9449-81ff6f857a0a": {
             "paths": [
                 "metadata/view/Users",
                 "app/view/override/Users.js",
                 "app/view/Users.js"
             ],
             "className": "Users"
+        },
+        "346d96af-9bcd-40ad-ab88-16fed5fe0bd4": {
+            "paths": [
+                "metadata/view/Profile",
+                "app/view/override/Profile.js",
+                "app/view/Profile.js"
+            ],
+            "className": "Profile"
         }
     },
     "viewOrderMap": {
@@ -236,12 +244,13 @@
             "2c3c1857-de7c-4ce3-99cd-249288dfc0d8",
             "8b639bfd-ab6f-4b04-bae7-8b32fbfe3b87",
             "dd877428-85f4-4116-b7c4-2d076e952334",
+            "346d96af-9bcd-40ad-ab88-16fed5fe0bd4",
             "07be9c33-4fba-4cc2-a59b-feaa09968475",
             "8377bb3b-9576-4f3b-b36c-c473cd2a5d1d",
             "0c72b429-03d4-4378-b84f-6c4e9cc8d04f",
+            "144a6776-c32f-4bd6-9449-81ff6f857a0a",
             "3ded5ea1-071f-4c80-b4af-6b53e02078ef",
-            "be25f754-4122-421c-9e7c-6662f3e51ab0",
-            "ad2e27eb-4de2-4a23-a5aa-ff4181f9e14b"
+            "be25f754-4122-421c-9e7c-6662f3e51ab0"
         ],
         "store": [
             "dd3b456b-2f76-47b0-8263-095bba350629",

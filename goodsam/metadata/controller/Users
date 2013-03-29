@@ -58,7 +58,7 @@
                 "designer|userClassName": "onShowusers",
                 "fn": "onShowusers",
                 "implHandler": [
-                    "this.getApplication().fireEvent('showview', this.getUsersView());",
+                    "this.getApplication().fireEvent('showview', this.getProfileView());",
                     "Ext.getStore('Users').load();"
                 ],
                 "name": "showusers",
@@ -120,6 +120,163 @@
                 "scope": "this"
             },
             "designerId": "7314f1e9-6247-4f1e-b045-368e524b481e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "profileView",
+                "autoCreate": true,
+                "ref": "profileView",
+                "selector": "profileview",
+                "xtype": "profileview"
+            },
+            "designerId": "67575c6f-95fc-4281-bb9c-2f502d45ff9f"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onProfileDisclose",
+                "fn": "onProfileDisclose",
+                "implHandler": [
+                    "var view = this.getUsersView(),",
+                    "    form = view.down('formpanel');",
+                    "",
+                    "form.setRecord(record);",
+                    "",
+                    "this.getApplication().fireEvent('showview', view);",
+                    "this.getDeleteUserButton().show();"
+                ],
+                "name": "disclose",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "profileview"
+            },
+            "designerId": "bd15228d-b38e-4870-b693-cd17b03c19d2"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onProfileSelect",
+                "fn": "onProfileSelect",
+                "implHandler": [
+                    "var view = this.getUsersView(),",
+                    "    form = view.down('formpanel');",
+                    "",
+                    "form.setRecord(record);",
+                    "",
+                    "this.getApplication().fireEvent('showview', view);",
+                    "this.getDeleteUserButton().show();"
+                ],
+                "name": "select",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "profileview"
+            },
+            "designerId": "f85fc159-e494-4ada-9807-be846cc6febb"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "deleteUserButton",
+                "ref": "deleteUserButton",
+                "selector": "button[action=delete]"
+            },
+            "designerId": "ee3de668-fdfd-4db9-a6dd-74c1f652b524"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onRemoveAccount",
+                "fn": "onRemoveAccount",
+                "implHandler": [
+                    "var me = this;",
+                    "        me.getUsersView().down('formpanel').getRecord().erase({",
+                    "            success: function(){",
+                    "                Ext.getStore('Users').load();",
+                    "                delete window.localStorage.user;",
+                    "                window.location.reload();",
+                    "            },",
+                    "            failure: function(){",
+                    "                Ext.Msg.alert('Error', 'Sorry, there was an error l\\'deleting your account.');",
+                    "            } ",
+                    "        });",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "usersview button[action=delete]"
+            },
+            "designerId": "facef3ed-3f36-459c-915a-5d622232d9bb"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onUpdateUser",
+                "fn": "onUpdateUser",
+                "implHandler": [
+                    "var me = this,",
+                    "    view = me.getUsersView(),",
+                    "    form = view.down('formpanel'),",
+                    "    values = form.getValues(),",
+                    "    user = form.getRecord() || Ext.create('RSS.model.User'),",
+                    "    errors;",
+                    "",
+                    "user.setData(values);",
+                    "",
+                    "errors = user.validate();",
+                    "",
+                    "if(!errors.length){",
+                    "",
+                    "    user.save({",
+                    "        success: function() {",
+                    "            Ext.getStore('Users').load();",
+                    "            me.getApplication().fireEvent('back');",
+                    "        },",
+                    "        failure: function(){",
+                    "            Ext.Msg.alert('Error Saving', 'Sorry, there was an error updating your account. Please try again.');",
+                    "        }",
+                    "    });",
+                    "}",
+                    "else{",
+                    "",
+                    "    error = errors.first();",
+                    "    Ext.Msg.alert('Invalid Entry', Ext.String.format('Error \"{0}\":<br/>{1}.', error.getField(), error.getMessage()));",
+                    "",
+                    "}"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "usersview button[action=save]"
+            },
+            "designerId": "025f781a-f399-404a-b6e9-284d9c1b61f6"
         }
     ]
 }

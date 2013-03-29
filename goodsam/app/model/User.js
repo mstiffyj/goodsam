@@ -40,6 +40,10 @@ Ext.define('RSS.model.User', {
             {
                 name: 'email',
                 type: 'string'
+            },
+            {
+                name: 'newsletter',
+                type: 'string'
             }
         ],
         proxy: {

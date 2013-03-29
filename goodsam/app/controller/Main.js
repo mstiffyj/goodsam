@@ -36,7 +36,12 @@ Ext.define('RSS.controller.Main', {
                 selector: 'registerview',
                 xtype: 'registerview'
             },
-            friendsButton: 'button[action=friends]'
+            friendsButton: 'button[action=friends]',
+            contactView: {
+                autoCreate: true,
+                selector: 'contactview',
+                xtype: 'contactview'
+            }
         },
 
         control: {
@@ -55,6 +60,9 @@ Ext.define('RSS.controller.Main', {
             },
             "registerview button[action=register]": {
                 tap: 'onRegTap'
+            },
+            "button[action=contact]": {
+                tap: 'onContactTap'
             }
         }
     },
@@ -147,6 +155,20 @@ Ext.define('RSS.controller.Main', {
             Ext.Msg.alert('Invalid Entry', Ext.String.format('Error "{0}":<br/>{1}.', error.getField(), error.getMessage()));
 
         }
+    },
+
+    onContactTap: function(button, e, options) {
+        this.getContactView().submit({
+            url: 'api/v1/users/comment',
+            method: 'POST',
+            scope: this,
+            success: function(form, response){
+                Ext.Msg.alert('Comment Received', 'Someone will respond to your comment shortly.');
+            },
+            failure: function(form, response){
+                Ext.Msg.alert('Error', 'Sorry, your comment was not received. Please try again later.');
+            }
+        });
     },
 
     showView: function(view) {

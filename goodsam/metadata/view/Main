@@ -8,7 +8,7 @@
     "userConfig": {
         "designer|userClassName": "Main",
         "designer|userAlias": "mainview",
-        "id": null,
+        "id": "view_container",
         "ui": "dark"
     },
     "id": "ExtBox1-ext-gen2070",

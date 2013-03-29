@@ -1,5 +1,5 @@
 {
-    "type": "dataview",
+    "type": "container",
     "reference": {
         "name": "items",
         "type": "array"
@@ -11,46 +11,175 @@
         "cls": [
             "users-view"
         ],
-        "id": "view-container",
-        "store": "Users"
+        "layout": "fit"
     },
-    "id": "ExtBox1-ext-gen36368",
-    "designerId": "ad2e27eb-4de2-4a23-a5aa-ff4181f9e14b",
+    "id": "ExtBox1-ext-gen2629",
+    "designerId": "144a6776-c32f-4bd6-9449-81ff6f857a0a",
     "cn": [
         {
-            "type": "template",
+            "type": "formpanel",
             "reference": {
-                "name": "itemTpl",
-                "type": "object"
+                "name": "items",
+                "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "itemTpl",
-                "implHandler": [
-                    "<div class=\"pWrap\">",
-                    "    <div class=\"pTitle\">Username</div>",
-                    "    <div class=\"pinfo\"><input class=\"x-type\" type=\"text\" value=\"{username}\"></div>",
-                    "</div>",
-                    "",
-                    "<div class=\"pWrap\">",
-                    "    <div class=\"pTitle\">First</div>",
-                    "    <div class=\"pinfo\"><input type=\"text\" value=\"{name}\"></div>",
-                    "</div>",
-                    "",
-                    "<div class=\"pWrap\">",
-                    "    <div class=\"pTitle\">Last</div>",
-                    "    <div class=\"pinfo\"><input type=\"text\" value=\"{surname}\"></div>",
-                    "</div>",
-                    "",
-                    "<div class=\"pWrap\">",
-                    "    <div class=\"pTitle\">Email</div>",
-                    "    <div class=\"pinfo\"><input type=\"text\" value=\"{email}\"></div>",
-                    "</div>",
-                    ""
-                ],
-                "designer|displayName": "itemTpl"
+                "designer|userClassName": "FeedEditForm",
+                "designer|userAlias": "",
+                "designer|displayName": "UserEditForm",
+                "itemId": null
             },
-            "designerId": "cc7fa787-ea65-4bb8-a2af-552eb19a5345"
+            "designerId": "a2670197-1cbb-42f9-9eeb-2aafc87c60bb",
+            "cn": [
+                {
+                    "type": "fieldset",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyFieldSet1",
+                        "title": ""
+                    },
+                    "designerId": "2fa33a4e-9f8d-4897-96a3-1aabac6ccdd1",
+                    "cn": [
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField1",
+                                "label": "Username",
+                                "name": "username"
+                            },
+                            "designerId": "e96f7bd5-bfd5-4c3b-aaf4-3b912ebeccbe"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField1",
+                                "label": "First",
+                                "name": "name"
+                            },
+                            "designerId": "e7ed99bc-642b-44fd-922c-c9dbe514063e"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField9",
+                                "label": "Last",
+                                "name": "surname"
+                            },
+                            "designerId": "6fd55bf5-5065-4453-981d-9381d671d91f"
+                        },
+                        {
+                            "type": "textfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTextField10",
+                                "label": "Email",
+                                "name": "email"
+                            },
+                            "designerId": "ec99fb5f-7c25-4e0e-9566-c5930c1462d9"
+                        },
+                        {
+                            "type": "checkboxfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyCheckbox1",
+                                "designer|displayName": "Newsletter",
+                                "label": "Newsletter",
+                                "name": "newsletter",
+                                "value": "Yes"
+                            },
+                            "designerId": "8c10def9-8200-457c-a9c4-59b948f6b3e1"
+                        }
+                    ]
+                },
+                {
+                    "type": "hiddenfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyHiddenField",
+                        "name": "id"
+                    },
+                    "designerId": "631d2270-7153-4112-b6a3-6d689f730946"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "action": "save",
+                        "designer|userClassName": "MyButton1",
+                        "height": 50,
+                        "ui": "action",
+                        "text": "Update"
+                    },
+                    "designerId": "bc4ddea0-4912-493c-8fbc-988145e283f3",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "action": "delete",
+                        "designer|userClassName": "MyButton1",
+                        "height": 50,
+                        "hidden": true,
+                        "style": "margin-top: 10px;",
+                        "ui": "decline",
+                        "text": "Delete Account"
+                    },
+                    "designerId": "3677ebb7-2737-4793-b6a3-db890f25e3ce",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

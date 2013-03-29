@@ -59,6 +59,32 @@ class User extends CI_Model {
 	    return $success ? $user : false;    
 	
 	}
+	
+	public function comment($user){
+
+		$sql = "INSERT INTO contact (id, email, comment)".
+	           " VALUES (?, ?, ?)";
+
+	    $success = $this->db->query($sql, $user);
+	    return $success ? $user: false;    
+	
+	}
+	
+	public function update($id, $name, $email, $newsletter, $surname, $username){
+
+		$sql = "UPDATE users SET name = ?, surname = ?, username = ?, email = ?, newsletter = ? WHERE id = ?";
+	    $success = $this->db->query($sql, array($name, $email, $newsletter, $surname, $username, $id));
+	    return $success;    
+	
+	}
+	
+	public function delete($id){
+
+		$sql = "DELETE FROM users WHERE id = ?";
+	    $success = $this->db->query($sql, array($id));
+	    return $success;    
+	
+	}
 
 }
 

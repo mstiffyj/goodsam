@@ -11,6 +11,7 @@
         "cls": [
             "news-details-view"
         ],
+        "id": null,
         "scrollable": "vertical"
     },
     "id": "ExtBox1-ext-gen21741",
@@ -26,7 +27,9 @@
             "userConfig": {
                 "designer|userClassName": "tpl",
                 "implHandler": [
-                    "<p class=\"content\">{content}</p>"
+                    "<div id=\"wrap\">",
+                    "<p class=\"content\">{content}</p>",
+                    "</div>"
                 ],
                 "designer|displayName": "tpl"
             },

@@ -19,6 +19,7 @@ Ext.define('RSS.view.Timeline', {
 
     config: {
         id: 'timeline',
+        ui: '',
         store: 'data',
         cls: [
             'timeline-view'

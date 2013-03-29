@@ -35,9 +35,11 @@ Ext.define('RSS.view.Contact', {
             },
             {
                 xtype: 'fieldset',
+                instructions: 'max char 500',
                 items: [
                     {
-                        xtype: 'textareafield'
+                        xtype: 'textareafield',
+                        name: 'comment'
                     }
                 ]
             },

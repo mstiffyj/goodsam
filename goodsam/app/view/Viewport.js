@@ -18,12 +18,13 @@ Ext.define('RSS.view.Viewport', {
     alias: 'widget.viewportview',
 
     requires: [
-        'RSS.view.Main',
         'RSS.view.Timeline',
+        'RSS.view.Main',
         'RSS.view.Contact'
     ],
 
     config: {
+        activeItem: 1,
         cls: 'viewport-view',
         tabBar: {
             docked: 'bottom'
@@ -36,14 +37,14 @@ Ext.define('RSS.view.Viewport', {
                 title: 'GoodSam'
             },
             {
-                xtype: 'mainview',
-                title: 'Feeds',
-                iconCls: 'bookmarks'
-            },
-            {
                 xtype: 'timelineview',
                 title: 'Timeline',
                 iconCls: 'time'
+            },
+            {
+                xtype: 'mainview',
+                title: 'Feeds',
+                iconCls: 'bookmarks'
             },
             {
                 xtype: 'contactview',

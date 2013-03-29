@@ -133,10 +133,10 @@
                     "    failure: function(response){",
                     "        Ext.Msg.alert('Login Failed', 'Please try again.');",
                     "        console.log(localStorage.user);",
-                    "        ",
+                    "",
                     "        delete window.localStorage.user;",
                     "        window.location.reload();",
-                    "        ",
+                    "",
                     "",
                     "    }",
                     "});"
@@ -163,7 +163,7 @@
                     "        this.loginComplete (response.user);",
                     "    },",
                     "    failure: function(form, response){",
-                    "         Ext.Msg.alert('Login Failed', 'Please try again.');",
+                    "        Ext.Msg.alert('Login Failed', 'Please try again.');",
                     "",
                     "",
                     "    }",
@@ -592,6 +592,51 @@
                 ]
             },
             "designerId": "097e0370-312e-43e3-bae5-0168f620ac2f"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "contactView",
+                "autoCreate": true,
+                "ref": "contactView",
+                "selector": "contactview",
+                "xtype": "contactview"
+            },
+            "designerId": "5908027e-dd9f-43bc-9ef9-59f08bfb341c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onContactTap",
+                "fn": "onContactTap",
+                "implHandler": [
+                    "this.getContactView().submit({",
+                    "    url: 'api/v1/users/comment',",
+                    "    method: 'POST',",
+                    "    scope: this,",
+                    "    success: function(form, response){",
+                    "        Ext.Msg.alert('Comment Received', 'Someone will respond to your comment shortly.');",
+                    "    },",
+                    "    failure: function(form, response){",
+                    "        Ext.Msg.alert('Error', 'Sorry, your comment was not received. Please try again later.');",
+                    "    }",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button[action=contact]"
+            },
+            "designerId": "7afdaee5-8228-4d8c-b1e4-b6b919b78c7d"
         }
     ]
 }

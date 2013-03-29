@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "activeItem": 1,
         "designer|userClassName": "Viewport",
         "designer|userAlias": "viewportview",
         "designer|initialView": true,
@@ -50,11 +51,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Feeds",
-                "iconCls": "bookmarks"
+                "title": "Timeline",
+                "iconCls": "time"
             },
-            "designerId": "2dbaf480-0347-499d-959a-1573e5a3e1d7",
-            "masterInstanceId": "ExtBox1-ext-gen2070"
+            "designerId": "7efca6e0-333d-46db-8a5f-3f780ae2a0bb",
+            "masterInstanceId": "ExtBox1-ext-gen2633"
         },
         {
             "type": "linkedinstance",
@@ -64,11 +65,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Timeline",
-                "iconCls": "time"
+                "title": "Feeds",
+                "iconCls": "bookmarks"
             },
-            "designerId": "7efca6e0-333d-46db-8a5f-3f780ae2a0bb",
-            "masterInstanceId": "ExtBox1-ext-gen2633"
+            "designerId": "2dbaf480-0347-499d-959a-1573e5a3e1d7",
+            "masterInstanceId": "ExtBox1-ext-gen2070"
         },
         {
             "type": "linkedinstance",

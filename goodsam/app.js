@@ -44,7 +44,8 @@ Ext.application({
         'Register',
         'Contact',
         'Friends',
-        'Users'
+        'Users',
+        'Profile'
     ],
     name: 'RSS',
     controllers: [

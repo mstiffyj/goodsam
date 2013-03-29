@@ -159,7 +159,59 @@ class Users extends REST_Controller {
         }
 
     }
+    
+    public function comment_post(){
+    
+		session_start();
+        $this->load->model('User');  
+          
+        $user = $this->User->comment(
+            array(
+                "id" => null,
+                "email" => $this->post('email'),
+                "comment" => $this->post('comment')
+            )
+        );
 
+        if($user){
+
+            $this->response(
+                array(
+                    "success" => "true"
+                ), 
+                200
+            );
+
+        }
+        else{
+        
+            $this->response(
+                array(
+                    "success" => "false"
+                ), 
+                403
+            );
+
+        }
+
+    }
+    
+    public function update_put(){
+
+        $this->load->model('User');
+        $success = $this->User->update($this->put('id'), $this->put('name'), $this->put('surname'), $this->put('username'), $this->put('email'), $this->put('newsletter'));
+        $this->response(array("success" => $success), 200);
+
+    }
+
+    public function remove_delete($id){
+    
+		session_start();
+        $this->load->model('User');
+        $success = $this->User->delete($_SESSION['user']->id, $id);
+        $this->response(array("success" => $success), 200);
+
+    }
 
     
 }

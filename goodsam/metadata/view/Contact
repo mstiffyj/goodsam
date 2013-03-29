@@ -64,7 +64,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyFieldSet5",
-                "instructions": null,
+                "instructions": "max char 500",
                 "title": null
             },
             "designerId": "58cbbb3e-3910-4c67-9ede-739ad7902eaa",
@@ -78,7 +78,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyTextArea",
-                        "label": null
+                        "label": null,
+                        "name": "comment"
                     },
                     "designerId": "9febfdf1-cb6e-4c57-9f65-adf56a9198c7"
                 }

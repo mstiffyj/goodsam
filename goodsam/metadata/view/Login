@@ -9,7 +9,8 @@
         "title": null,
         "designer|userClassName": "Login",
         "designer|userAlias": "loginview",
-        "id": "view-container"
+        "id": "view-container",
+        "style": null
     },
     "id": "ExtBox1-ext-gen4414",
     "designerId": "420d38d3-713e-452f-b01c-9d402f8e6c90",

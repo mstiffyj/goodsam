@@ -130,6 +130,20 @@
                 "field": "username"
             },
             "designerId": "7a5984de-13bd-4dc9-b294-0309ca2814b6"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field5",
+                "name": "newsletter",
+                "type": "string"
+            },
+            "designerId": "0bbc6835-d940-4fb6-b23e-02efe2cecf78"
         }
     ]
 }
