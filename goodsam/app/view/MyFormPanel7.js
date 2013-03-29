@@ -49,6 +49,23 @@ Ext.define('RSS.view.MyFormPanel7', {
             },
             {
                 xtype: 'fieldset',
+                instructions: 'GoodSam offers this app, including all information, software, products and services available from this app or offered as part of or in conjunction with this app (the "app"), to you, the user, conditioned upon your acceptance of all of the terms, conditions, policies and notices stated here. Good Sam reserves the right to make changes to these Terms and Conditions immediately by posting the changed Terms and Conditions in this location.',
+                title: 'Terms and Conditions'
+            },
+            {
+                xtype: 'fieldset',
+                instructions: 'Your continued use of the app constitutes your agreement to all such terms, conditions and notices, and any changes to the Terms and Conditions made by GoodSam.'
+            },
+            {
+                xtype: 'fieldset',
+                instructions: 'The term \'GoodSam\' or \'us\' or \'we\' refers to the owner of the app. The term \'you\' refers to the user or viewer of our app. The use of this app is subject to the following terms of use:'
+            },
+            {
+                xtype: 'fieldset',
+                instructions: 'Use the app at your own risk. This app is provided to you "as is," without warranty of any kind either express or implied. Neither GoodSam nor its employees, agents, third-party information providers, merchants, licensors or the like warrant that the app or its operation will be accurate, reliable, uninterrupted or error-free. No agent or representative has the authority to create any warranty regarding the app on behalf of GoodSam. GoodSam reserves the right to change or discontinue at any time any aspect or feature of the app.'
+            },
+            {
+                xtype: 'fieldset',
                 instructions: '© 2013'
             }
         ]

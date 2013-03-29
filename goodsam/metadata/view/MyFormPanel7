@@ -103,6 +103,62 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyFieldSet8",
+                "instructions": "GoodSam offers this app, including all information, software, products and services available from this app or offered as part of or in conjunction with this app (the \"app\"), to you, the user, conditioned upon your acceptance of all of the terms, conditions, policies and notices stated here. Good Sam reserves the right to make changes to these Terms and Conditions immediately by posting the changed Terms and Conditions in this location.",
+                "title": "Terms and Conditions"
+            },
+            "designerId": "96ae6fad-c4b3-4031-88c2-f38d3715450d"
+        },
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyFieldSet8",
+                "instructions": "Your continued use of the app constitutes your agreement to all such terms, conditions and notices, and any changes to the Terms and Conditions made by GoodSam.",
+                "title": null
+            },
+            "designerId": "bb2cd7f9-525d-43fc-975b-89cea0f52ccc"
+        },
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyFieldSet8",
+                "instructions": "The term 'GoodSam' or 'us' or 'we' refers to the owner of the app. The term 'you' refers to the user or viewer of our app. The use of this app is subject to the following terms of use:",
+                "title": null
+            },
+            "designerId": "6a948dcc-94a7-4e03-be08-c4d7735422f7"
+        },
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyFieldSet8",
+                "instructions": "Use the app at your own risk. This app is provided to you \"as is,\" without warranty of any kind either express or implied. Neither GoodSam nor its employees, agents, third-party information providers, merchants, licensors or the like warrant that the app or its operation will be accurate, reliable, uninterrupted or error-free. No agent or representative has the authority to create any warranty regarding the app on behalf of GoodSam. GoodSam reserves the right to change or discontinue at any time any aspect or feature of the app.",
+                "title": null
+            },
+            "designerId": "45a4b4e8-bcce-4761-9bd3-f34e41fc796b"
+        },
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyFieldSet8",
                 "instructions": "© 2013",
                 "title": null
             },
