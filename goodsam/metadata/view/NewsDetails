@@ -18,6 +18,20 @@
     "designerId": "8377bb3b-9576-4f3b-b36c-c473cd2a5d1d",
     "cn": [
         {
+            "type": "image",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyImage",
+                "height": 71,
+                "src": "images/logo.png"
+            },
+            "designerId": "cb712396-bb7c-4cb7-80cf-22f006791294"
+        },
+        {
             "type": "template",
             "reference": {
                 "name": "tpl",
@@ -27,9 +41,11 @@
             "userConfig": {
                 "designer|userClassName": "tpl",
                 "implHandler": [
+                    "<div id=\"bg\">",
                     "<div id=\"wrap\">",
                     "<p class=\"content\">{content}</p>",
-                    "</div>"
+                    "</div>",
+                    "<div>"
                 ],
                 "designer|displayName": "tpl"
             },

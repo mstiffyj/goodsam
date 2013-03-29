@@ -23,9 +23,18 @@ Ext.define('RSS.view.NewsDetails', {
             'news-details-view'
         ],
         tpl: [
+            '<div id="bg">',
             '<div id="wrap">',
             '<p class="content">{content}</p>',
-            '</div>'
+            '</div>',
+            '<div>'
+        ],
+        items: [
+            {
+                xtype: 'image',
+                height: 71,
+                src: 'images/logo.png'
+            }
         ]
     }
 

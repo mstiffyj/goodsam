@@ -193,8 +193,7 @@
                     "this.getApplication().fireEvent('showfeeds');",
                     "this.showLogoutButton();",
                     "this.showNewFeedButton();",
-                    "this.showUsersButton();",
-                    "this.showFriendsButton();"
+                    "this.showUsersButton();"
                 ]
             },
             "designerId": "95cb66a6-4ec3-4d29-8d9e-6890acb54707"
@@ -311,8 +310,7 @@
                 "implHandler": [
                     "if(view instanceof RSS.view.News || ",
                     "view instanceof RSS.view.FeedEdit || ",
-                    "view instanceof RSS.view.Users || ",
-                    "view instanceof RSS.view.Friends){",
+                    "view instanceof RSS.view.Users){",
                     "    this.hideLogoutButton();",
                     "    this.hideNewFeedButton();",
                     "    this.hideUsersButton();",
@@ -338,8 +336,7 @@
                 "implHandler": [
                     "if(view instanceof RSS.view.News ||",
                     "view instanceof RSS.view.FeedEdit || ",
-                    "view instanceof RSS.view.Users || ",
-                    "view instanceof RSS.view.Friends){",
+                    "view instanceof RSS.view.Users){",
                     "    this.showLogoutButton();",
                     "    this.showNewFeedButton();",
                     "    this.showUsersButton();",
@@ -543,64 +540,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "friendsButton",
-                "ref": "friendsButton",
-                "selector": "button[action=friends]"
-            },
-            "designerId": "c9f66010-0d72-49c9-9740-56c31847f9ba"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "showFriendsButton",
-                "fn": "showFriendsButton",
-                "implHandler": [
-                    "this.getMainView().getNavigationBar().add({",
-                    "    xtype: 'button',",
-                    "    action: 'friends',",
-                    "    ui: 'action',",
-                    "    iconMask: true,",
-                    "    iconCls: 'team',",
-                    "    align: 'right'",
-                    "});",
-                    "",
-                    "this.getUsersButton ().show({",
-                    "    type: 'pop'",
-                    "});"
-                ]
-            },
-            "designerId": "4e4b7206-a85b-47b4-83b0-24685609ba30"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "hideFriendsButton",
-                "fn": "hideFriendsButton",
-                "implHandler": [
-                    "this.getFriendsButton().destroy(true);",
-                    ""
-                ]
-            },
-            "designerId": "097e0370-312e-43e3-bae5-0168f620ac2f"
-        },
-        {
-            "type": "controllerref",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
                 "designer|userClassName": "contactView",
                 "autoCreate": true,
                 "ref": "contactView",
@@ -637,6 +576,22 @@
                 "designer|controlQuery": "button[action=contact]"
             },
             "designerId": "7afdaee5-8228-4d8c-b1e4-b6b919b78c7d"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "helpView",
+                "autoCreate": true,
+                "ref": "helpView",
+                "selector": "helpview",
+                "xtype": "helpview"
+            },
+            "designerId": "19ca16ff-250a-4eff-96f1-8443038bb0f0"
         }
     ]
 }

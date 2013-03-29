@@ -20,7 +20,8 @@ Ext.define('RSS.view.Viewport', {
     requires: [
         'RSS.view.Timeline',
         'RSS.view.Main',
-        'RSS.view.Contact'
+        'RSS.view.Contact',
+        'RSS.view.MyFormPanel7'
     ],
 
     config: {
@@ -48,7 +49,12 @@ Ext.define('RSS.view.Viewport', {
             },
             {
                 xtype: 'contactview',
-                title: 'Info',
+                title: 'Contact',
+                iconCls: 'compose'
+            },
+            {
+                xtype: 'myformpanel7',
+                title: 'Help',
                 iconCls: 'info'
             }
         ]

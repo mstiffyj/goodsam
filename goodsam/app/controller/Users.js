@@ -23,11 +23,6 @@ Ext.define('RSS.controller.Users', {
                 selector: 'usersview',
                 xtype: 'usersview'
             },
-            friendsView: {
-                autoCreate: true,
-                selector: 'friendsview',
-                xtype: 'friendsview'
-            },
             profileView: {
                 autoCreate: true,
                 selector: 'profileview',
@@ -39,9 +34,6 @@ Ext.define('RSS.controller.Users', {
         control: {
             "button[action=users]": {
                 tap: 'onUsersTap'
-            },
-            "button[action=friends]": {
-                tap: 'onFriendsTap'
             },
             "profileview": {
                 disclose: 'onProfileDisclose',
@@ -58,11 +50,6 @@ Ext.define('RSS.controller.Users', {
 
     onUsersTap: function(button, e, options) {
         this.getApplication().fireEvent('showusers');
-
-    },
-
-    onFriendsTap: function(button, e, options) {
-        this.getApplication().fireEvent('showfriends');
 
     },
 
@@ -138,16 +125,10 @@ Ext.define('RSS.controller.Users', {
         Ext.getStore('Users').load();
     },
 
-    onShowfriends: function() {
-        this.getApplication().fireEvent('showview', this.getFriendsView());
-        Ext.getStore('Friends').load();
-    },
-
     init: function(application) {
 
         application.on([
-        { event: 'showusers', fn: this.onShowusers, scope: this },
-        { event: 'showfriends', fn: this.onShowfriends, scope: this }
+        { event: 'showusers', fn: this.onShowusers, scope: this }
         ]);
     }
 

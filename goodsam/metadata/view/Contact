@@ -25,6 +25,20 @@
     ],
     "cn": [
         {
+            "type": "image",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyImage",
+                "height": 71,
+                "src": "images/logo.png"
+            },
+            "designerId": "a816da50-9736-4b86-b4d1-5a45ac8d04c2"
+        },
+        {
             "type": "fieldset",
             "reference": {
                 "name": "items",
@@ -108,21 +122,6 @@
                     "type": "string"
                 }
             ]
-        },
-        {
-            "type": "fieldset",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "container|align": null,
-                "designer|userClassName": "MyFieldSet",
-                "instructions": "© 2013",
-                "title": null
-            },
-            "designerId": "f1304b09-0e7c-4e2f-a2b8-ffcb88e7b3ae"
         }
     ]
 }

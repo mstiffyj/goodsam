@@ -23,6 +23,11 @@ Ext.define('RSS.view.Contact', {
         ],
         items: [
             {
+                xtype: 'image',
+                height: 71,
+                src: 'images/logo.png'
+            },
+            {
                 xtype: 'fieldset',
                 title: 'Contact',
                 items: [
@@ -50,10 +55,6 @@ Ext.define('RSS.view.Contact', {
                 margin: '1em 0 0 0',
                 ui: 'action',
                 text: 'Contact'
-            },
-            {
-                xtype: 'fieldset',
-                instructions: '© 2013'
             }
         ]
     }

@@ -36,11 +36,15 @@ Ext.define('RSS.controller.Main', {
                 selector: 'registerview',
                 xtype: 'registerview'
             },
-            friendsButton: 'button[action=friends]',
             contactView: {
                 autoCreate: true,
                 selector: 'contactview',
                 xtype: 'contactview'
+            },
+            helpView: {
+                autoCreate: true,
+                selector: 'helpview',
+                xtype: 'helpview'
             }
         },
 
@@ -86,8 +90,7 @@ Ext.define('RSS.controller.Main', {
     onNavigationviewPush: function(navigationView, view, options) {
         if(view instanceof RSS.view.News || 
         view instanceof RSS.view.FeedEdit || 
-        view instanceof RSS.view.Users || 
-        view instanceof RSS.view.Friends){
+        view instanceof RSS.view.Users){
             this.hideLogoutButton();
             this.hideNewFeedButton();
             this.hideUsersButton();
@@ -98,8 +101,7 @@ Ext.define('RSS.controller.Main', {
     onNavigationviewPop: function(navigationView, view, options) {
         if(view instanceof RSS.view.News ||
         view instanceof RSS.view.FeedEdit || 
-        view instanceof RSS.view.Users || 
-        view instanceof RSS.view.Friends){
+        view instanceof RSS.view.Users){
             this.showLogoutButton();
             this.showNewFeedButton();
             this.showUsersButton();
@@ -220,7 +222,6 @@ Ext.define('RSS.controller.Main', {
         this.showLogoutButton();
         this.showNewFeedButton();
         this.showUsersButton();
-        this.showFriendsButton();
     },
 
     showLogoutButton: function() {
@@ -277,26 +278,6 @@ Ext.define('RSS.controller.Main', {
 
     hideUsersButton: function() {
         this.getUsersButton().destroy(true);
-    },
-
-    showFriendsButton: function() {
-        this.getMainView().getNavigationBar().add({
-            xtype: 'button',
-            action: 'friends',
-            ui: 'action',
-            iconMask: true,
-            iconCls: 'team',
-            align: 'right'
-        });
-
-        this.getUsersButton ().show({
-            type: 'pop'
-        });
-    },
-
-    hideFriendsButton: function() {
-        this.getFriendsButton().destroy(true);
-
     },
 
     init: function(application) {

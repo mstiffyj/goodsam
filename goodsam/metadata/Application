@@ -33,7 +33,8 @@
             "Contact",
             "Friends",
             "Users",
-            "Profile"
+            "Profile",
+            "MyFormPanel7"
         ],
         "name": "RSS",
         "controllers": [

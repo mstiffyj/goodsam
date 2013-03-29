@@ -79,11 +79,25 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Info",
-                "iconCls": "info"
+                "title": "Contact",
+                "iconCls": "compose"
             },
             "designerId": "369e1cdc-1134-4539-bf6f-b21309c77758",
             "masterInstanceId": "ExtBox1-ext-gen4057"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Help",
+                "iconCls": "info"
+            },
+            "designerId": "8edd8df3-d82a-4c76-a470-489101ba6191",
+            "masterInstanceId": "ExtBox1-ext-gen35916"
         }
     ]
 }

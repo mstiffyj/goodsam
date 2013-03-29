@@ -23,6 +23,20 @@
     ],
     "cn": [
         {
+            "type": "image",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyImage",
+                "height": 71,
+                "src": "images/logo.png"
+            },
+            "designerId": "25368d11-07a4-4484-a220-7909917d5139"
+        },
+        {
             "type": "fieldset",
             "reference": {
                 "name": "items",

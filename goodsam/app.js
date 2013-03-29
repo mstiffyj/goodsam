@@ -23,14 +23,14 @@ Ext.application({
         'News',
         'Instagram',
         'User',
-        'Friends'
+        null
     ],
     stores: [
         'Feeds',
         'News',
         'Data',
         'Users',
-        'Friends'
+        null
     ],
     views: [
         'Main',
@@ -43,9 +43,10 @@ Ext.application({
         'Timeline',
         'Register',
         'Contact',
-        'Friends',
+        null,
         'Users',
-        'Profile'
+        'Profile',
+        'MyFormPanel7'
     ],
     name: 'RSS',
     controllers: [

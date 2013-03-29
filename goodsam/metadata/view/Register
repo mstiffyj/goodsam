@@ -38,6 +38,20 @@
             "designerId": "4e755788-e64b-410c-a6d3-c55034e53773",
             "cn": [
                 {
+                    "type": "image",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyImage",
+                        "height": 71,
+                        "src": "images/logo.png"
+                    },
+                    "designerId": "c3fdf624-a1e5-43e2-bd0d-5a055c746a5d"
+                },
+                {
                     "type": "fieldset",
                     "reference": {
                         "name": "items",

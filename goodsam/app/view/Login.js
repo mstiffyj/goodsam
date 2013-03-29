@@ -21,6 +21,11 @@ Ext.define('RSS.view.Login', {
         id: 'view-container',
         items: [
             {
+                xtype: 'image',
+                height: 71,
+                src: 'images/logo.png'
+            },
+            {
                 xtype: 'fieldset',
                 title: '',
                 items: [

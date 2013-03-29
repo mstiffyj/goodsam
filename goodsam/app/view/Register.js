@@ -29,6 +29,11 @@ Ext.define('RSS.view.Register', {
                 xtype: 'formpanel',
                 items: [
                     {
+                        xtype: 'image',
+                        height: 71,
+                        src: 'images/logo.png'
+                    },
+                    {
                         xtype: 'fieldset',
                         layout: {
                             type: 'default'

@@ -28,6 +28,20 @@
             "designerId": "9d71de9e-fd21-4458-95f0-34285970d0ee",
             "cn": [
                 {
+                    "type": "image",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyImage",
+                        "height": 71,
+                        "src": "images/logo.png"
+                    },
+                    "designerId": "1ff1a514-c6df-4127-ad39-faa4d09d86e2"
+                },
+                {
                     "type": "fieldset",
                     "reference": {
                         "name": "items",
