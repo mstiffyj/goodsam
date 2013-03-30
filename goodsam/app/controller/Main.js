@@ -94,7 +94,6 @@ Ext.define('RSS.controller.Main', {
             this.hideLogoutButton();
             this.hideNewFeedButton();
             this.hideUsersButton();
-            this.hideFriendsButton();
         }
     },
 
@@ -105,7 +104,6 @@ Ext.define('RSS.controller.Main', {
             this.showLogoutButton();
             this.showNewFeedButton();
             this.showUsersButton();
-            this.showFriendsButton();
         }
     },
 

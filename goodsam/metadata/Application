@@ -10,15 +10,13 @@
             "Feed",
             "News",
             "Instagram",
-            "User",
-            "Friends"
+            "User"
         ],
         "stores": [
             "Feeds",
             "News",
             "Data",
-            "Users",
-            "Friends"
+            "Users"
         ],
         "views": [
             "Main",
@@ -31,7 +29,6 @@
             "Timeline",
             "Register",
             "Contact",
-            "Friends",
             "Users",
             "Profile",
             "MyFormPanel7"

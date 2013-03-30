@@ -3,7 +3,7 @@
         "data": false,
         "model": false,
         "component": true,
-        "controller": false,
+        "controller": true,
         "resource": false,
         "a51b7ec1-d7d6-4e48-a6ea-cc2671585207": {
             "id": "a51b7ec1-d7d6-4e48-a6ea-cc2671585207"
@@ -111,6 +111,7 @@
         },
         "b7bd334e-95e5-4890-bf3b-065b24634ea8": {
             "id": "b7bd334e-95e5-4890-bf3b-065b24634ea8",
+            "expanded": false,
             "cn": [
                 {
                     "id": "bc931557-05ee-4278-91a2-f086ce166187"
@@ -237,7 +238,6 @@
             "cn": [
                 {
                     "id": "a2670197-1cbb-42f9-9eeb-2aafc87c60bb",
-                    "expanded": false,
                     "cn": [
                         {
                             "id": "98ef943b-636e-4536-b7a1-bc72598f646e"
@@ -505,7 +505,6 @@
         },
         "d091780b-3030-48a4-9cf8-d9e9302a513a": {
             "id": "d091780b-3030-48a4-9cf8-d9e9302a513a",
-            "expanded": false,
             "cn": [
                 {
                     "id": "1853ed82-31e4-4717-a86c-c618c92e9f54"

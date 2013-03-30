@@ -22,15 +22,13 @@ Ext.application({
         'Feed',
         'News',
         'Instagram',
-        'User',
-        null
+        'User'
     ],
     stores: [
         'Feeds',
         'News',
         'Data',
-        'Users',
-        null
+        'Users'
     ],
     views: [
         'Main',
@@ -43,7 +41,6 @@ Ext.application({
         'Timeline',
         'Register',
         'Contact',
-        null,
         'Users',
         'Profile',
         'MyFormPanel7'

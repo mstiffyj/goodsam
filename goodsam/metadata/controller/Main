@@ -314,7 +314,6 @@
                     "    this.hideLogoutButton();",
                     "    this.hideNewFeedButton();",
                     "    this.hideUsersButton();",
-                    "    this.hideFriendsButton();",
                     "}"
                 ],
                 "name": "push",
@@ -340,7 +339,6 @@
                     "    this.showLogoutButton();",
                     "    this.showNewFeedButton();",
                     "    this.showUsersButton();",
-                    "    this.showFriendsButton();",
                     "}"
                 ],
                 "name": "pop",
