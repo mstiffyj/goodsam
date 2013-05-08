@@ -1,7 +1,5 @@
-goodeats
+goodsam
 ========
-
-Help
 
 About
 
